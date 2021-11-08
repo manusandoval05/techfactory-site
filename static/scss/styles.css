@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  background-color: #6586f0;
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+  color: white;
+}
+
+.blue {
+  background-color: #1d1dd8;
+}
+
+.red {
+  background-color: #ca1c1c;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.dark {
+  background-color: #041e42;
+}
+
+.custom-shape-divider-top-1636320904 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1636320904 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1636320904 .shape-fill {
+  fill: #CA1C1C;
+}
+/*# sourceMappingURL=styles.css.map */
