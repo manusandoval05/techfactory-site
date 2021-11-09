@@ -30,22 +30,146 @@ section{
 .dark{
     background-color: #041e42;
 }
-.custom-shape-divider-top-1636320904 {
+.complex-wave-effect{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
 }
+.triangle-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 127px;
+    }
 
-.custom-shape-divider-top-1636320904 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
 }
+.book-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 105px;
+    }
 
-.custom-shape-divider-top-1636320904 .shape-fill {
-    fill: #CA1C1C;
+}
+.inverted-triangle-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 171px;
+    }
+}
+.tilt-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 225px; 
+    }
+}
+.arrow-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 96px;
+    }
+}
+.wave-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 131px;
+    }
+}
+.curve-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 222px;
+    }
+}
+.red-fill{
+    .shape-fill{
+        fill: #CA1C1C;
+    }
+}
+.blue-fill{
+    .shape-fill{
+        fill: rgb(29, 29, 216);
+    }
+}
+.light-blue-fill{
+    .shape-fill{
+        fill: #6586F0;
+    }
+}
+.dark-fill{
+    .shape-fill{
+        fill: #041e42;
+    }
+}
+.pink-fill{
+    .shape-fill{
+        fill: pink; 
+    }
 }

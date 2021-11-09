@@ -44,7 +44,7 @@ section {
   background-color: #041e42;
 }
 
-.custom-shape-divider-top-1636320904 {
+.complex-wave-effect {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,14 +53,150 @@ section {
   line-height: 0;
 }
 
-.custom-shape-divider-top-1636320904 svg {
+.complex-wave-effect svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 150px;
 }
 
-.custom-shape-divider-top-1636320904 .shape-fill {
+.triangle-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.triangle-effect svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+}
+
+.book-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.book-effect svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 105px;
+}
+
+.inverted-triangle-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.inverted-triangle-effect svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 171px;
+}
+
+.tilt-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tilt-effect svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 225px;
+}
+
+.arrow-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.arrow-effect svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 96px;
+}
+
+.wave-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave-effect svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 131px;
+}
+
+.curve-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.curve-effect svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 222px;
+}
+
+.red-fill .shape-fill {
   fill: #CA1C1C;
+}
+
+.blue-fill .shape-fill {
+  fill: #1d1dd8;
+}
+
+.light-blue-fill .shape-fill {
+  fill: #6586F0;
+}
+
+.dark-fill .shape-fill {
+  fill: #041e42;
+}
+
+.pink-fill .shape-fill {
+  fill: pink;
 }
 /*# sourceMappingURL=styles.css.map */
