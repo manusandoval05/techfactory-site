@@ -7,10 +7,6 @@
   font-family: 'Comfortaa', cursive;
 }
 
-body {
-  background-color: #6586f0;
-}
-
 section {
   position: relative;
   display: -webkit-box;
@@ -37,19 +33,43 @@ section .first {
 }
 
 .blue {
-  background-color: #1d1dd8;
+  background-color: #4285f4;
+}
+
+.green {
+  background-color: #34a853;
 }
 
 .red {
-  background-color: #ca1c1c;
+  background-color: #eb4335;
 }
 
-.pink {
-  background-color: pink;
+.yellow {
+  background-color: #fbbc05;
 }
 
-.dark {
-  background-color: #041e42;
+.white {
+  background-color: white;
+}
+
+.red-fill .shape-fill {
+  fill: #eb4335;
+}
+
+.blue-fill .shape-fill {
+  fill: #4285f4;
+}
+
+.green-fill .shape-fill {
+  fill: #34a853;
+}
+
+.yellow-fill .shape-fill {
+  fill: #fbbc05;
+}
+
+.white-fill .shape-fill {
+  fill: white;
 }
 
 .complex-wave-effect {
@@ -186,25 +206,5 @@ section .first {
   display: block;
   width: calc(101% + 1.3px);
   height: 222px;
-}
-
-.red-fill .shape-fill {
-  fill: #CA1C1C;
-}
-
-.blue-fill .shape-fill {
-  fill: #1d1dd8;
-}
-
-.light-blue-fill .shape-fill {
-  fill: #6586F0;
-}
-
-.dark-fill .shape-fill {
-  fill: #041e42;
-}
-
-.pink-fill .shape-fill {
-  fill: pink;
 }
 /*# sourceMappingURL=styles.css.map */

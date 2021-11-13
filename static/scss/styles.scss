@@ -6,9 +6,6 @@
     box-sizing: border-box;
     font-family:'Comfortaa', cursive;
 }
-body{
-    background-color: rgb(101, 134, 240);
-}
 section{
     position: relative;
     display: flex;
@@ -25,16 +22,44 @@ section{
     }   
 }
 .blue{
-    background-color: rgb(29, 29, 216);
+    background-color: #4285f4;
+}
+.green{
+    background-color: #34a853;
 }
 .red{
-    background-color: rgb(202, 28, 28);
+    background-color: #eb4335;
 }
-.pink{
-    background-color: pink;
+.yellow{
+    background-color: #fbbc05;
 }
-.dark{
-    background-color: #041e42;
+.white{
+    background-color: white;
+}
+.red-fill{
+    .shape-fill{
+        fill: #eb4335;
+    }
+}
+.blue-fill{
+    .shape-fill{
+        fill: #4285f4;
+    }
+}
+.green-fill{
+    .shape-fill{
+        fill: #34a853;
+    }
+}
+.yellow-fill{
+    .shape-fill{
+        fill: #fbbc05;
+    }
+}
+.white-fill{
+    .shape-fill{
+        fill: white; 
+    }
 }
 .complex-wave-effect{
     position: absolute;
@@ -152,30 +177,5 @@ section{
         display: block;
         width: calc(101% + 1.3px);
         height: 222px;
-    }
-}
-.red-fill{
-    .shape-fill{
-        fill: #CA1C1C;
-    }
-}
-.blue-fill{
-    .shape-fill{
-        fill: rgb(29, 29, 216);
-    }
-}
-.light-blue-fill{
-    .shape-fill{
-        fill: #6586F0;
-    }
-}
-.dark-fill{
-    .shape-fill{
-        fill: #041e42;
-    }
-}
-.pink-fill{
-    .shape-fill{
-        fill: pink; 
     }
 }
