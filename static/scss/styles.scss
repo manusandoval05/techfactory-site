@@ -6,6 +6,86 @@
     box-sizing: border-box;
     font-family:'Comfortaa', cursive;
 }
+header{
+    z-index: 10;
+    margin-top: 20px;
+    position: fixed;
+    top: -10px; 
+    right: 20px; 
+    left: 20px; 
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);  
+    .logo{
+        color: black; 
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+        margin-bottom: 15px;
+        img{
+            height: 25%;
+            width: 25%;
+        }
+    } 
+    ul{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        li{
+            list-style: none;
+            margin-right: 10px;
+            a{
+                background: rgba(255,255,255, 0.2);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.25); 
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.2em;
+                color: black; 
+                padding: 8px 15px;
+                border-radius: 25px;
+            }
+            a:hover{
+                background: rgba(30, 144, 255, 0.3);
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                color: white;
+            }
+            a.active{
+                background: rgba(0,0, 0, 0.7); 
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.25); 
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+    button{
+        background: rgba(0,0,0,0); 
+        cursor: pointer;
+        border: none; 
+        border-radius: 20px;
+    }
+    button:hover{
+        background: rgba(255, 255, 255, 0.2); 
+    }
+}
 section{
     position: relative;
     display: flex;
@@ -20,6 +100,32 @@ section{
     .first{
         margin-top: 0px;
     }   
+}
+.big-background-text{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    .text{
+        position: absolute;
+        z-index: 10;
+        bottom: 500px;
+        width: 100vw;
+        h1{
+            margin: auto;
+            padding: auto;
+            color: white;
+            max-width: 80vw;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+    img{
+        z-index: 5;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+    }
 }
 .blue{
     background-color: #4285f4;
