@@ -50,7 +50,7 @@ header .large-logo img {
 
 header .small-logo img {
   width: auto;
-  height: 72px;
+  height: 64px;
 }
 
 header ul {
@@ -65,6 +65,7 @@ header ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 header ul li {
@@ -256,7 +257,7 @@ section .first {
 .big-background-text .text {
   position: absolute;
   z-index: 10;
-  bottom: 500px;
+  bottom: 50vh;
   width: 100vw;
 }
 
@@ -476,11 +477,6 @@ section .first {
 }
 
 @media (max-width: 500px) {
-  header {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   header .large-logo {
     display: none;
   }
