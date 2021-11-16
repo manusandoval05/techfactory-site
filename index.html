@@ -18,7 +18,7 @@
     <title>TechFactory</title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous'>
     <link rel='stylesheet' href='static/scss/styles.css'>
-    <link rel='shortcut icon' href='static/img/logo/icon.png' type='image/x-icon'>
+    <link rel='shortcut icon' href='static/img/logo/favicon.png' type='image/x-icon'>
     <script src='static/js/menu.js'></script>
 </head>
 <body>
@@ -34,7 +34,8 @@
         </div>
     </section>
     <header>
-        <a href="#" class="logo"><img src="static/img/logo/logo.png" alt=""></a>
+        <a href="#" class="large-logo"><img src="static/img/logo/large-logo.png" alt=""></a>
+        <a href="#" class="small-logo"><img src="static/img/logo/small-logo.png" alt=""></a>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="empresas.html">Empresas</a></li>
@@ -42,6 +43,11 @@
             <li><a href="comunidad.html">Comunidad</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
+        <button class="toggle" onclick="menuToggle();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
     </header>
     <div class="big-background-text">
         <img src="static/img/gallery/A2AA2ED4-D4A0-40BF-8813-A4F1A8CAA59C.JPG" alt="">

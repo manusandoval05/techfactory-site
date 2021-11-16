@@ -43,17 +43,14 @@ header {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-header .logo {
-  color: black;
-  font-weight: 700;
-  font-size: 2em;
-  text-decoration: none;
-  margin-bottom: 15px;
+header .large-logo img {
+  width: auto;
+  height: 72px;
 }
 
-header .logo img {
-  width: 8em;
-  height: auto;
+header .small-logo img {
+  width: auto;
+  height: 72px;
 }
 
 header ul {
@@ -113,18 +110,21 @@ header button {
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
-  border-radius: 20px;
 }
 
-header button:hover {
-  background: rgba(255, 255, 255, 0.2);
+header button svg {
+  fill: black;
+}
+
+header button:hover svg {
+  fill: #fbbc05;
 }
 
 .glass-section {
   width: 100%;
   min-height: 100vh;
   position: fixed;
-  z-index: 5;
+  z-index: -1;
 }
 
 .glass-section .glass-menu {
@@ -135,9 +135,9 @@ header button:hover {
           transition-delay: 0s;
   width: 0%;
   min-height: 100vh;
-  background: white;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,6 +146,10 @@ header button:hover {
 
 .glass-section .glass-menu ul {
   display: none;
+}
+
+.glass-section.active {
+  z-index: 5;
 }
 
 .glass-section.active .glass-menu {
@@ -447,5 +451,50 @@ section .first {
   display: block;
   width: calc(101% + 1.3px);
   height: 222px;
+}
+
+@media (max-width: 1110px) {
+  header ul {
+    display: none;
+  }
+  header button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1110px) {
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header button {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .large-logo {
+    display: none;
+  }
+  header .small-logo {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+  header .large-logo {
+    display: block;
+  }
+  header .small-logo {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

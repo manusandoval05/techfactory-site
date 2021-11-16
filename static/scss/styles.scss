@@ -26,18 +26,19 @@ header{
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.25); 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);  
-    .logo{
-        color: black; 
-        font-weight: 700;
-        font-size: 2em;
-        text-decoration: none;
-        margin-bottom: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5); 
+    .large-logo{
         img{
-            width: 8em;
-            height: auto;
+            width: auto;
+            height: 72px;
         }
     } 
+    .small-logo{
+        img{
+            width: auto;
+            height: 72px;
+        }
+    }
     ul{
         display: flex; 
         flex-wrap: wrap;
@@ -80,25 +81,29 @@ header{
         background: rgba(0,0,0,0); 
         cursor: pointer;
         border: none; 
-        border-radius: 20px;
+        svg{
+            fill: black;
+        }
     }
     button:hover{
-        background: rgba(255, 255, 255, 0.2); 
+        svg{
+            fill: #fbbc05;
+        }
     }
 }
 .glass-section{
     width: 100%;
     min-height: 100vh;
     position: fixed;
-    z-index: 5;
+    z-index: -1;
     .glass-menu{
         position: fixed;
         transition: 2s;
         transition-delay: 0s;
         width: 0%;
         min-height: 100vh;
-        background: rgba(255, 255, 255, 1); 
-        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.2); 
+        backdrop-filter: blur(10px);
         z-index: 5;
         display: flex;
         ul{
@@ -107,6 +112,7 @@ header{
     }
 }
 .glass-section.active{
+    z-index: 5;
     .glass-menu{
         display: flex;
         width: 100%;
@@ -352,5 +358,46 @@ section{
         display: block;
         width: calc(101% + 1.3px);
         height: 222px;
+    }
+}
+@media (max-width: 1110px){
+    header{
+        ul{
+            display: none;
+        }
+        button{
+            display: flex;
+        }
+    }
+}
+@media (min-width: 1110px){
+    header{
+        ul{
+            display: flex;
+        }
+        button{
+            display: none;
+        }
+    }
+}
+@media (max-width: 500px){
+    header{
+        align-items: center;
+        .large-logo{
+            display: none;
+        }
+        .small-logo{
+            display: block;
+        }
+    }
+}
+@media (min-width: 500px){
+    header{
+        .large-logo{
+            display: block;
+        }
+        .small-logo{
+            display: none;
+        }
     }
 }
