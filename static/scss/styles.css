@@ -238,7 +238,7 @@ section {
 
 section h1 {
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 section .first {
@@ -278,7 +278,7 @@ section .first {
   overflow: hidden;
 }
 
-.container {
+.service-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +294,7 @@ section .first {
   overflow: hidden;
 }
 
-.container .card {
+.service-container .card {
   position: relative;
   width: 350px;
   height: 280px;
@@ -302,7 +302,7 @@ section .first {
   border-radius: 15px;
 }
 
-.container .card .icon {
+.service-container .card .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +326,7 @@ section .first {
   z-index: 2;
 }
 
-.container .card .icon svg {
+.service-container .card .icon svg {
   fill: white;
   height: 100px;
   width: 100px;
@@ -334,7 +334,7 @@ section .first {
   transition: 0.5s;
 }
 
-.container .card .content {
+.service-container .card .content {
   position: relative;
   padding: 20px;
   color: black;
@@ -343,15 +343,15 @@ section .first {
   z-index: 1;
 }
 
-.container .card .content h2 {
+.service-container .card .content h2 {
   font-size: 1.4em;
 }
 
-.container .card .content p {
+.service-container .card .content p {
   font-size: 0.9em;
 }
 
-.container .card:hover .icon {
+.service-container .card:hover .icon {
   top: 5px;
   left: calc(50% - 40px);
   width: 80px;
@@ -359,10 +359,23 @@ section .first {
   border-radius: 50%;
 }
 
-.container .card:hover .icon svg {
+.service-container .card:hover .icon svg {
   fill: white;
   height: 50px;
   width: 50px;
+}
+
+.text-container {
+  max-width: 1400px;
+}
+
+.text-container h1 {
+  text-align: center;
+}
+
+.text-container p {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .blue {
