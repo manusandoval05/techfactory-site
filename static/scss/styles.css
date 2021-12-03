@@ -394,6 +394,9 @@ section .first {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 100px;
   margin-bottom: 75px;
 }
