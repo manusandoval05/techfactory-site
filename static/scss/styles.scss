@@ -36,7 +36,7 @@ header{
     .small-logo{
         img{
             width: auto;
-            height: 64px;
+            height: 32px;
         }
     }
     ul{
@@ -173,6 +173,7 @@ section{
         font-size: 3em;
         margin-top: 150px;
         margin-bottom: 50px;
+        text-align: center;
     } 
     .first{
         margin-top: 100px;
@@ -186,13 +187,16 @@ section{
     .text{
         position: absolute;
         z-index: 10;
-        bottom: 50vh;
-        width: 100vw;
+        bottom: 25%;
+        top: 25%;
+        left: 25%;
+        right: 25%;
         h1{
             margin: auto;
             padding: auto;
             color: white;
             max-width: 80vw;
+            text-align: center;
             text-shadow: 1px 1px 1px black;
         }
     }
@@ -272,6 +276,14 @@ section{
         }
     }
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 0;
+}
 .text-container{
     max-width: 1400px;
     h1{
@@ -285,12 +297,12 @@ section{
 }
 .img-container{
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    gap: 100px;
-    margin-bottom: 75px;
+    img{
+        max-width: 300px;
+        height: auto;
+    }
 }
 .blue{
     background-color: #4285f4;
@@ -472,6 +484,9 @@ section{
 }
 @media (max-width: 500px){
     header{
+        margin-top: 10px;
+        padding: 5px;
+        justify-content: space-evenly;
         .large-logo{
             display: none;
         }
