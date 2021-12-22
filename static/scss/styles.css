@@ -152,7 +152,7 @@ header button:hover svg {
 }
 
 .glass-section.active {
-  z-index: 5;
+  z-index: 6;
 }
 
 .glass-section.active .glass-menu {
@@ -243,6 +243,7 @@ section h1 {
   margin-top: 150px;
   margin-bottom: 50px;
   text-align: center;
+  z-index: 5;
 }
 
 section .first {
@@ -268,6 +269,7 @@ section .first {
 }
 
 .big-background-text .text h1 {
+  z-index: 5;
   margin: auto;
   padding: auto;
   color: white;
@@ -299,6 +301,7 @@ section .first {
   gap: 20px;
   max-width: 1200px;
   overflow: hidden;
+  z-index: 5;
 }
 
 .service-container .card {
@@ -388,10 +391,12 @@ section .first {
           justify-content: center;
   gap: 100px;
   margin: 50px 0;
+  z-index: 5;
 }
 
 .text-container {
-  max-width: 1400px;
+  max-width: 1000px;
+  z-index: 5;
 }
 
 .text-container h1 {
@@ -400,7 +405,7 @@ section .first {
 }
 
 .text-container p {
-  text-align: center;
+  text-align: justify;
   font-size: 1.5em;
   line-height: 1.5;
 }
