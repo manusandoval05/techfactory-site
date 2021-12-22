@@ -43,14 +43,9 @@ header {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-header .large-logo img {
+header .logo img {
   width: auto;
   height: 72px;
-}
-
-header .small-logo img {
-  width: auto;
-  height: 32px;
 }
 
 header ul {
@@ -114,6 +109,8 @@ header button {
 }
 
 header button svg {
+  height: 64px;
+  width: 64px;
   fill: black;
 }
 
@@ -395,6 +392,7 @@ section .first {
 }
 
 .text-container {
+  margin: 0 30px;
   max-width: 1000px;
   z-index: 5;
 }
@@ -405,7 +403,7 @@ section .first {
 }
 
 .text-container p {
-  text-align: justify;
+  text-align: center;
   font-size: 1.5em;
   line-height: 1.5;
 }
@@ -644,20 +642,13 @@ section .first {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  header .large-logo {
-    display: none;
+  header .logo img {
+    height: 32px;
+    width: auto;
   }
-  header .small-logo {
-    display: block;
-  }
-}
-
-@media (min-width: 500px) {
-  header .large-logo {
-    display: block;
-  }
-  header .small-logo {
-    display: none;
+  header button svg {
+    height: 32px;
+    width: 32px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

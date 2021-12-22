@@ -27,18 +27,12 @@ header{
     border: 1px solid rgba(255, 255, 255, 0.25); 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5); 
-    .large-logo{
+    .logo{
         img{
             width: auto;
             height: 72px;
         }
     } 
-    .small-logo{
-        img{
-            width: auto;
-            height: 32px;
-        }
-    }
     ul{
         display: flex; 
         flex-wrap: wrap;
@@ -83,6 +77,8 @@ header{
         cursor: pointer;
         border: none; 
         svg{
+            height: 64px;
+            width: 64px;
             fill: black;
         }
     }
@@ -290,6 +286,7 @@ section{
     z-index: 5;
 }
 .text-container{
+    margin: 0 30px;
     max-width: 1000px;
     z-index: 5;
     h1{
@@ -297,7 +294,7 @@ section{
         font-size: 3em;
     }
     p{
-        text-align: justify;
+        text-align: center;
         font-size: 1.5em;
         line-height: 1.5;
     }
@@ -510,21 +507,17 @@ section{
         margin-top: 10px;
         padding: 5px;
         justify-content: space-evenly;
-        .large-logo{
-            display: none;
+        .logo{
+            img{
+                height: 32px;
+                width: auto;
+            }
         }
-        .small-logo{
-            display: block;
-        }
-    }
-}
-@media (min-width: 500px){
-    header{
-        .large-logo{
-            display: block;
-        }
-        .small-logo{
-            display: none;
+        button{
+            svg{
+                height: 32px;
+                width: 32px;
+            }
         }
     }
 }
