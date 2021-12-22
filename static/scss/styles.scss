@@ -328,9 +328,11 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    img{
-        max-width: 300px;
-        height: auto;
+    a{
+        img{
+            max-width: 300px;
+            height: auto;
+        }
     }
 }
 .blue{
