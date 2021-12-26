@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family:'Comfortaa', cursive;
 }
-header{
+header.index{
     z-index: 10;
     margin-top: 20px;
     position: fixed;
@@ -30,7 +30,7 @@ header{
     .logo{
         img{
             width: auto;
-            height: 72px;
+            height: 64px;
         }
     } 
     ul{
@@ -58,7 +58,7 @@ header{
             a:hover{
                 background: rgba(251,188,5, 0.3);
                 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-                color: white;
+                color: black;
             }
             a.active{
                 background: rgba(0,0, 0, 0.7); 
@@ -72,6 +72,50 @@ header{
             }
         }
     }
+    button{
+        background: rgba(0,0,0,0); 
+        cursor: pointer;
+        border: none; 
+        svg{
+            height: 64px;
+            width: 64px;
+            fill: black;
+        }
+    }
+    button:hover{
+        svg{
+            fill: #fbbc05;
+        }
+    }
+}
+header.info{
+    z-index: 10;
+    width: 50%;
+    margin-top: 20px;
+    position: fixed;
+    top: -10px; 
+    right: 20px; 
+    left: 20px; 
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5); 
+    .logo{
+        img{
+            width: auto;
+            height: 64px;
+        }
+    } 
     button{
         background: rgba(0,0,0,0); 
         cursor: pointer;
@@ -335,6 +379,67 @@ section{
         }
     }
 }
+.information-section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .content{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        .text{
+            color: black;
+            h1{
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 4em;
+                text-align: left;
+            }
+            p{
+                font-size: 1.2em;
+                line-height: 1.5;
+            }
+            .button{
+               display: inline-block;
+               text-decoration: none;
+               font-size: 1.2em;
+               margin-top: 20px;
+               color: black;
+               font-weight: 500;
+               border: 2px solid black;
+               padding: 10px 30px;
+               letter-spacing: 1px; 
+            }
+            .button:hover{
+                background: black;
+                color: white;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        .img-box{
+            position: relative;
+            width: 50%;
+            height: 50vh;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .img-box:last-child{
+            width: 100%;
+        }
+    }
+}
 .blue{
     background-color: #4285f4;
 }
@@ -504,7 +609,7 @@ section{
             font-size: 2em;
         }
     }
-    header{
+    header.index{
         ul{
             display: none;
         }
@@ -514,12 +619,34 @@ section{
     }
 }
 @media (min-width: 1110px){
-    header{
+    header.index{
         ul{
             display: flex;
         }
         button{
             display: none;
+        }
+    }
+}
+@media (max-width: 1000px){
+    header.info{
+        width: 95%;
+    }
+    .information-section{
+        grid-template-columns: 1fr;
+        .content{
+            padding: 40px;
+            height: 70vh;
+        }
+    }
+}
+@media (max-width: 700px){
+    .information-section{
+        .images{
+            .img-box{
+                width: 100%;
+                height: 40vh;
+            }
         }
     }
 }
@@ -530,10 +657,33 @@ section{
             left: 0%;
         }
     }
-    header{
+    .information-section{
+        .content{
+            .text{
+                h1{
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+    header.index{
         margin-top: 10px;
         padding: 5px;
         justify-content: space-evenly;
+        .logo{
+            img{
+                height: 32px;
+                width: auto;
+            }
+        }
+        button{
+            svg{
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+    header.info{
         .logo{
             img{
                 height: 32px;
