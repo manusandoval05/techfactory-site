@@ -143,19 +143,19 @@ header.index .toggle span:nth-child(2) {
   left: 15px;
 }
 
-header.index .toogle.active span:nth-child(1) {
+header.index .toggle.active span:nth-child(1) {
   width: 40px;
   -webkit-transform: translateY(0px) rotate(45deg);
           transform: translateY(0px) rotate(45deg);
 }
 
-header.index .toogle.active span:nth-child(2) {
+header.index .toggle.active span:nth-child(2) {
   width: 40px;
   -webkit-transform: translateY(0px) rotate(315deg);
           transform: translateY(0px) rotate(315deg);
 }
 
-header.index .toogle.active span:nth-child(3) {
+header.index .toggle.active span:nth-child(3) {
   -webkit-transform: translateX(60px);
           transform: translateX(60px);
 }
