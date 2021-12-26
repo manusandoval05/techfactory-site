@@ -176,6 +176,10 @@ header.info button:hover svg {
   fill: #fbbc05;
 }
 
+header.info.right {
+  left: calc(50% - 10px);
+}
+
 .sidebar {
   z-index: 6;
   position: fixed;
@@ -806,6 +810,9 @@ section .first {
   header.info {
     width: 95%;
   }
+  header.info.right {
+    left: 0;
+  }
   .information-section {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -813,6 +820,12 @@ section .first {
   .information-section .content {
     padding: 40px;
     height: 70vh;
+  }
+  .information-section .one {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
   }
 }
 
