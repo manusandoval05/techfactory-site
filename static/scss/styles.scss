@@ -726,21 +726,6 @@ section{
                 width: auto;
             }
         }
-        button{
-            svg{
-                height: 32px;
-                width: 32px;
-            }
-        }
-    }
-    header.info{
-        padding: 10px 50px;
-        .logo{
-            img{
-                height: 32px;
-                width: auto;
-            }
-        }
         .toggle{
             width: 32px;
             height: 32px; 
@@ -773,6 +758,16 @@ section{
                 transform: translateX(30px);
             }
         }
+    }
+    header.info{
+        padding: 10px 50px;
+        .logo{
+            img{
+                height: 32px;
+                width: auto;
+            }
+        }
+
 
     }
 }

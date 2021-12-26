@@ -939,9 +939,40 @@ section .first {
     height: 32px;
     width: auto;
   }
-  header.index button svg {
-    height: 32px;
+  header.index .toggle {
     width: 32px;
+    height: 32px;
+  }
+  header.index .toggle span {
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+  }
+  header.index .toggle span:nth-child(1) {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    width: 12px;
+    left: 8px;
+  }
+  header.index .toggle span:nth-child(2) {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+    width: 12px;
+    left: 8px;
+  }
+  header.index .toggle.active span:nth-child(1) {
+    width: 20px;
+    -webkit-transform: translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
+  }
+  header.index .toggle.active span:nth-child(2) {
+    width: 20px;
+    -webkit-transform: translateY(0px) rotate(315deg);
+            transform: translateY(0px) rotate(315deg);
+  }
+  header.index .toggle.active span:nth-child(3) {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
   }
   header.info {
     padding: 10px 50px;
@@ -949,41 +980,6 @@ section .first {
   header.info .logo img {
     height: 32px;
     width: auto;
-  }
-  header.info .toggle {
-    width: 32px;
-    height: 32px;
-  }
-  header.info .toggle span {
-    width: 20px;
-    height: 2px;
-    border-radius: 2px;
-  }
-  header.info .toggle span:nth-child(1) {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    width: 12px;
-    left: 8px;
-  }
-  header.info .toggle span:nth-child(2) {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
-    width: 12px;
-    left: 8px;
-  }
-  header.info .toggle.active span:nth-child(1) {
-    width: 20px;
-    -webkit-transform: translateY(0px) rotate(45deg);
-            transform: translateY(0px) rotate(45deg);
-  }
-  header.info .toggle.active span:nth-child(2) {
-    width: 20px;
-    -webkit-transform: translateY(0px) rotate(315deg);
-            transform: translateY(0px) rotate(315deg);
-  }
-  header.info .toggle.active span:nth-child(3) {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
   }
 }
 
