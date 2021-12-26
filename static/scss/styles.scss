@@ -24,6 +24,7 @@ header.index{
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.25); 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5); 
@@ -44,6 +45,7 @@ header.index{
             margin-right: 10px;
             a{
                 background: rgba(255,255,255, 0.2);
+                -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
                 border: 1px solid rgba(255, 255, 255, 0.25); 
                 border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -64,53 +66,13 @@ header.index{
                 background: rgba(0,0, 0, 0.7); 
                 border-radius: 15px;
                 backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
                 border: 1px solid rgba(255, 255, 255, 0.25); 
                 border-top: 1px solid rgba(255, 255, 255, 0.5);
                 border-left: 1px solid rgba(255, 255, 255, 0.5);
                 font-weight: 500;
                 color: white;
             }
-        }
-    }
-    .toggle{
-        position: relative;
-        cursor: pointer;
-        width: 64px; 
-        height: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        span{
-            position: absolute;
-            width: 40px;
-            height: 4px;
-            background: black;
-            border-radius: 4px;
-            transition: 0.5s;
-        }
-        span:nth-child(1){
-            transform: translateY(-15px);
-            width: 25px;
-            left: 15px;
-        }
-        span:nth-child(2){
-            transform: translateY(15px);
-            width: 25px;
-            left: 15px;
-        }
-    }
-    .toggle.active{
-        span:nth-child(1){
-            width: 40px;
-            transform: translateY(0px) rotate(45deg);
-        }
-        span:nth-child(2){
-            width: 40px;
-            transform: translateY(0px) rotate(315deg);
-        }
-        span:nth-child(3){
-            transform: translateX(60px);
         }
     }
 }
@@ -133,6 +95,7 @@ header.info{
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.25); 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5); 
@@ -142,48 +105,47 @@ header.info{
             height: 64px;
         }
     } 
-    .toggle{
-        position: relative;
-        cursor: pointer;
-        width: 64px; 
-        height: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        span{
-            position: absolute;
-            width: 40px;
-            height: 4px;
-            background: black;
-            border-radius: 4px;
-            transition: 0.5s;
-        }
-        span:nth-child(1){
-            transform: translateY(-15px);
-            width: 25px;
-            left: 15px;
-        }
-        span:nth-child(2){
-            transform: translateY(15px);
-            width: 25px;
-            left: 15px;
-        }
+}
+.toggle{
+    position: relative;
+    cursor: pointer;
+    width: 64px; 
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    span{
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: black;
+        border-radius: 4px;
+        transition: 0.5s;
     }
-    .toggle.active{
-        span:nth-child(1){
-            width: 40px;
-            transform: translateY(0px) rotate(45deg);
-        }
-        span:nth-child(2){
-            width: 40px;
-            transform: translateY(0px) rotate(315deg);
-        }
-        span:nth-child(3){
-            transform: translateX(60px);
-        }
+    span:nth-child(1){
+        transform: translateY(-15px);
+        width: 25px;
+        left: 15px;
     }
-
+    span:nth-child(2){
+        transform: translateY(15px);
+        width: 25px;
+        left: 15px;
+    }
+}
+.toggle.active{
+    span:nth-child(1){
+        width: 40px;
+        transform: translateY(0px) rotate(45deg);
+    }
+    span:nth-child(2){
+        width: 40px;
+        transform: translateY(0px) rotate(315deg);
+    }
+    span:nth-child(3){
+        transform: translateX(60px);
+    }
 }
 header.info.right{
     left: calc(50% - 10px);
@@ -227,6 +189,7 @@ header.info.right{
         min-height: 100vh;
         background: rgba(255, 255, 255, 0.9); 
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         z-index: 5;
         display: flex;
         ul{
@@ -255,6 +218,7 @@ header.info.right{
                 a{
                     background: rgba(212, 157, 157, 0.2);
                     backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
                     border: 1px solid rgba(255, 255, 255, 0.25); 
                     border-top: 1px solid rgba(255, 255, 255, 0.5);
                     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -274,6 +238,7 @@ header.info.right{
                     background: rgba(0,0, 0, 0.7); 
                     border-radius: 20px;
                     backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
                     border: 1px solid rgba(255, 255, 255, 0.25); 
                     border-top: 1px solid rgba(255, 255, 255, 0.5);
                     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -438,6 +403,8 @@ section{
 .information-section{
     height: 100vh;
     display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     .content{
         height: 100vh;
@@ -683,6 +650,7 @@ section{
     }
     .information-section{
         grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
         .content{
             padding: 40px;
             height: 70vh;
@@ -729,38 +697,6 @@ section{
                 width: auto;
             }
         }
-        .toggle{
-            width: 32px;
-            height: 32px; 
-            span{
-                width: 20px;
-                height: 2px;
-                border-radius: 2px;
-            }
-            span:nth-child(1){
-                transform: translateY(-8px);
-                width: 12px;
-                left: 8px;
-            }
-            span:nth-child(2){
-                transform: translateY(8px);
-                width: 12px;
-                left: 8px;
-            }
-        }
-        .toggle.active{
-            span:nth-child(1){
-                width: 20px;
-                transform: translateY(0px) rotate(45deg);
-            }
-            span:nth-child(2){
-                width: 20px;
-                transform: translateY(0px) rotate(315deg);
-            }
-            span:nth-child(3){
-                transform: translateX(30px);
-            }
-        }
     }
     header.info{
         margin-top: 10px;
@@ -772,37 +708,37 @@ section{
                 width: auto;
             }
         }
-        .toggle{
-            width: 32px;
-            height: 32px; 
-            span{
-                width: 20px;
-                height: 2px;
-                border-radius: 2px;
-            }
-            span:nth-child(1){
-                transform: translateY(-8px);
-                width: 12px;
-                left: 8px;
-            }
-            span:nth-child(2){
-                transform: translateY(8px);
-                width: 12px;
-                left: 8px;
-            }
+    }
+    .toggle{
+        width: 32px;
+        height: 32px; 
+        span{
+            width: 20px;
+            height: 2px;
+            border-radius: 2px;
         }
-        .toggle.active{
-            span:nth-child(1){
-                width: 20px;
-                transform: translateY(0px) rotate(45deg);
-            }
-            span:nth-child(2){
-                width: 20px;
-                transform: translateY(0px) rotate(315deg);
-            }
-            span:nth-child(3){
-                transform: translateX(30px);
-            }
+        span:nth-child(1){
+            transform: translateY(-8px);
+            width: 12px;
+            left: 8px;
+        }
+        span:nth-child(2){
+            transform: translateY(8px);
+            width: 12px;
+            left: 8px;
+        }
+    }
+    .toggle.active{
+        span:nth-child(1){
+            width: 20px;
+            transform: translateY(0px) rotate(45deg);
+        }
+        span:nth-child(2){
+            width: 20px;
+            transform: translateY(0px) rotate(315deg);
+        }
+        span:nth-child(3){
+            transform: translateX(30px);
         }
     }
 }
