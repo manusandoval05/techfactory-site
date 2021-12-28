@@ -21,8 +21,15 @@
     <script src='static/js/menu.js'></script>
 </head>
 <body>
-    <header class="info">
-        <a href="" class="logo"><img src="static/img/logo/logo.webp" alt="TechFactory"></a>
+    <header class="index">
+        <a href="#" class="logo"><img src="static/img/logo/logo.webp" alt="TechFactory"></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="empresas.html">Empresas</a></li>
+            <li><a href="mentores.html">Mentores</a></li>
+            <li><a href="comunidad.html">Comunidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
         <div class="toggle">
             <span></span>
             <span></span>
@@ -67,18 +74,87 @@
             </li>
         </ul>
     </aside>
-    <section class="information-section red">
-        <div class="content">
-            <div class="text">
-                <h1>Mentores</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, consequuntur nobis quasi debitis ipsam animi voluptatem eaque? Rem error laboriosam facilis. Sed blanditiis illo voluptatum molestias sint, officia soluta perferendis!</p>
-                <a href="" class="button">Conoce más</a>
-            </div>
+    <section class="contact-section green">
+        <div class="side-box">
+            <a href="https://api.whatsapp.com/send?phone=525559679091">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="static/img/icons/whatsapp.svg" alt="">
+                    </div>
+                    <div class="content whatsapp">
+                        <div class="icon">
+                            <img src="static/img/icons/whatsapp.svg" alt="">
+                        </div>
+                        <h3>WhatsApp y Celular</h3>
+                        <h4>55 5967 9091</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="mailto:manuel.sandoval@knoware.biz">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="static/img/icons/envelope.svg" alt="">
+                    </div>
+                    <div class="content mail">
+                        <div class="icon">
+                            <img src="static/img/icons/envelope.svg" alt="">
+                        </div>
+                        <h3>Email</h3>
+                        <h4>manuel.sandoval@knoware.biz</h4>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="images">
-           <div class="img-box"><img src="static/img/gallery/mentores/mentores1.jpg" alt=""></div>
-           <div class="img-box"><img src="static/img/gallery/mentores/mentores2.jpg" alt=""></div>
-           <div class="img-box"><img src="static/img/gallery/mentores/mentores3.jpg" alt=""></div> 
+        <div class="form-container">
+            <h2>Contáctanos</h2>
+            <form action="" id="form" method="POST">
+                <div class="row100">
+                    <div class="column">
+                        <div class="input-box">
+                            <input type="text" name="Name" id="name" required="required">
+                            <span class="text">Nombre *</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <input type="text" name="Surname" id="surname" required="required">
+                            <span class="text">Apellido *</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="column">
+                        <div class="input-box">
+                            <input type="email" name="Email" id="email" required="required">
+                            <span class="text" id="email-text">Correo *</span>
+                            <span class="line" id="email-line"></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <input type="tel" name="Phone" id="phone" required="required">
+                            <span class="text" id="tel-text">Teléfono *</span>
+                            <span class="line" id="tel-line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="column">
+                        <div class="input-box text-area">
+                            <textarea name="Message" id="message" required="required" rows="4"></textarea>
+                            <span class="text">Mensaje *</span> 
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="column">
+                        <input class="submit" type="submit" value="Enviar">
+                    </div>
+                </div>
+           </form>
         </div>
     </section>
 </body>
