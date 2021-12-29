@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", () => {
     const toggleMenu = document.querySelector(".toggle"); 
     const menu = document.querySelector(".sidebar"); 
 

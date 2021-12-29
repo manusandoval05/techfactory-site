@@ -18,7 +18,27 @@
     <title>TechFactory</title>
     <link rel='stylesheet' href='static/scss/styles.css'>
     <link rel='shortcut icon' href='static/img/logo/favicon.webp' type='image/x-icon'>
-    <script src='static/js/menu.js'></script>
+    <script type="text/javascript" src='static/js/menu.js'></script>
+    <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_AOWNedUlIuQZ6Cl33NYWy"); 
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = () =>{
+            document.getElementById("contact-form").addEventListener("submit", function(event){
+                event.preventDefault();
+
+                emailjs.sendForm("service_t74clc1", "contact_form", this)
+                    .then(function(){
+                        console.log("Email sent");
+                    }, function(error){
+                        console.log("Failed to send email", error);
+                    });
+            })
+        }
+    </script>
 </head>
 <body>
     <header class="index">
@@ -107,18 +127,18 @@
         </div>
         <div class="form-container">
             <h2>Contáctanos</h2>
-            <form action="" id="form" method="POST">
+            <form action="" id="contact-form" method="POST">
                 <div class="row100">
                     <div class="column">
                         <div class="input-box">
-                            <input type="text" name="Name" id="name" required="required">
+                            <input type="text" name="name" id="name" required="required">
                             <span class="text">Nombre *</span>
                             <span class="line"></span>
                         </div>
                     </div>
                     <div class="column">
                         <div class="input-box">
-                            <input type="text" name="Surname" id="surname" required="required">
+                            <input type="text" name="surname" id="surname" required="required">
                             <span class="text">Apellido *</span>
                             <span class="line"></span>
                         </div>
@@ -127,14 +147,14 @@
                 <div class="row100">
                     <div class="column">
                         <div class="input-box">
-                            <input type="email" name="Email" id="email" required="required">
+                            <input type="email" name="email" id="email" required="required">
                             <span class="text" id="email-text">Correo *</span>
                             <span class="line" id="email-line"></span>
                         </div>
                     </div>
                     <div class="column">
                         <div class="input-box">
-                            <input type="tel" name="Phone" id="phone" required="required">
+                            <input type="tel" name="phone" id="phone" required="required">
                             <span class="text" id="tel-text">Teléfono *</span>
                             <span class="line" id="tel-line"></span>
                         </div>
@@ -143,7 +163,7 @@
                 <div class="row100">
                     <div class="column">
                         <div class="input-box text-area">
-                            <textarea name="Message" id="message" required="required" rows="4"></textarea>
+                            <textarea name="message" id="message" required="required" rows="4"></textarea>
                             <span class="text">Mensaje *</span> 
                             <span class="line"></span>
                         </div>
