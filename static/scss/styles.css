@@ -627,7 +627,7 @@ section .first {
 .information-section .images .img-box {
   position: relative;
   width: 50%;
-  height: 50vh;
+  height: 50%;
 }
 
 .information-section .images .img-box img {
