@@ -594,6 +594,7 @@ section .first {
 .information-section .content .text p {
   font-size: 1.2em;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .information-section .content .text .button {
