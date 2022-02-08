@@ -48,12 +48,6 @@ To keep the content of the page as dynamic as possible and users interested, whi
 
 The `index.js` file contains all the dependencies to create dynamic news cards. The file is divided into two parts.
 
-The first part stores the URL (Currently not configured, so it is advised to modify the script with the updated Webapp URL)for the news webapp (written in Django) for later use. The script know exactly where to look for the most recent news (Currently in the "/noticias/api" file path). Then, the script will extract the json file and created a nested card for each news article with the following structure:
-
-```mermaid
-flowchart TD
-    card --> image & body
-    body --> title & button
-```
+The first part stores the URL (Currently not configured, so it is advised to modify the script with the updated Webapp URL)for the news webapp (written in Django) for later use. The script know exactly where to look for the most recent news (Currently in the "/noticias/api" file path of the news site). Then, the script will extract the json file and created a nested card for each news article with the following structure:
 
 This script is a simplified version of any nested DOM object creator, designate a parent give any number of children which can also be node objects that can have a node object, so everything becomes a linked list of objects or a tree. 
