@@ -18,11 +18,12 @@
     <title>TechFactory</title>
     <link rel='stylesheet' href='static/scss/styles.css'>
     <link rel='shortcut icon' href='static/img/logo/favicon.webp' type='image/x-icon'>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src='static/js/menu.js'></script>
     <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (() =>{
-            emailjs.init("user_AOWNedUlIuQZ6Cl33NYWy"); 
+            emailjs.init("user_UzgLUCPP6hC6dypxGMI1Y"); 
         })();
     </script>
     <script type="text/javascript">
@@ -30,7 +31,7 @@
             document.getElementById("contact-form").addEventListener("submit", (event) =>{
                 event.preventDefault();
 
-                emailjs.sendForm("service_t74clc1", "contact_form", this)
+                emailjs.sendForm("service_u7cu18j", "template_9nk275l", this)
                     .then(() =>{
                         console.log("Email sent");
                     }, (error) =>{
@@ -177,6 +178,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LcB6YweAAAAAH_wNpAisTJ-lSHNzNVxGAHHqPGn"></div>
                 <div class="row100">
                     <div class="column">
                         <input class="submit" type="submit" value="Enviar">
