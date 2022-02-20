@@ -1,0 +1,10 @@
+version: "3"
+services:
+ tfweb:
+    build:
+      context: .
+      dockerfile: ./dk/Dockerfile
+    container_name: tfweb
+    restart: always
+    ports:
+      - "81:8080"
