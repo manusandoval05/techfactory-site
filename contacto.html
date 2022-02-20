@@ -31,12 +31,7 @@
             document.getElementById("contact-form").addEventListener("submit", (event) =>{
                 event.preventDefault();
 
-                emailjs.sendForm("service_u7cu18j", "template_9nk275l", this)
-                    .then(() =>{
-                        console.log("Email sent");
-                    }, (error) =>{
-                        console.log("Failed to send email", error);
-                    });
+                emailjs.sendForm("service_u7cu18j", "template_9nk275l", document.getElementById("contact-form"));
             })
         }
     </script>
@@ -136,7 +131,7 @@
         </div>
         <div class="form-container">
             <h2>Contáctanos</h2>
-            <form action="" id="contact-form" method="POST">
+            <form action="?" id="contact-form" method="POST">
                 <div class="row100">
                     <div class="column">
                         <div class="input-box">
