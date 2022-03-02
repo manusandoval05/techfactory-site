@@ -1263,6 +1263,9 @@ section .first {
   header.info.right {
     left: 0;
   }
+  .article-section-header {
+    margin-top: 200px;
+  }
   .information-section {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
