@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content='Una comunidad para la transformación digital de PyMEs, las cadenas de valor y fuerza laboral de México.'>
-    <meta name='author' content='Manuel Sandoval'>
+    <meta name='author' content='Manuel Sandoval Arroyo'>
     <meta property='twitter:card' content='summary'>
     <meta property='og:site_name' content='TechFactory'>
     <meta property='og:title' content='TechFactory'>
@@ -14,15 +14,16 @@
     <meta property='og:image' content='raw image link'>
     <meta property='og:image:width' content='1280'>
     <meta property='og:image:height' content='800'>
-    <meta property='og:url' content='webpage url'>
+    <meta property='og:url' content='https://www.techfactory.org.mx'>
     <title>TechFactory</title>
     <link rel='stylesheet' href='static/scss/styles.css'>
     <link rel='shortcut icon' href='static/img/logo/favicon.webp' type='image/x-icon'>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src='static/js/menu.js'></script>
     <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (() =>{
-            emailjs.init("user_AOWNedUlIuQZ6Cl33NYWy"); 
+            emailjs.init("user_UzgLUCPP6hC6dypxGMI1Y"); 
         })();
     </script>
     <script type="text/javascript">
@@ -30,12 +31,7 @@
             document.getElementById("contact-form").addEventListener("submit", (event) =>{
                 event.preventDefault();
 
-                emailjs.sendForm("service_t74clc1", "contact_form", this)
-                    .then(() =>{
-                        console.log("Email sent");
-                    }, (error) =>{
-                        console.log("Failed to send email", error);
-                    });
+                emailjs.sendForm("service_u7cu18j", "template_9nk275l", document.getElementById("contact-form"));
             })
         }
     </script>
@@ -135,7 +131,7 @@
         </div>
         <div class="form-container">
             <h2>Contáctanos</h2>
-            <form action="" id="contact-form" method="POST">
+            <form action="#" id="contact-form" method="POST">
                 <div class="row100">
                     <div class="column">
                         <div class="input-box">
@@ -177,6 +173,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LcB6YweAAAAAH_wNpAisTJ-lSHNzNVxGAHHqPGn"></div>
                 <div class="row100">
                     <div class="column">
                         <input class="submit" type="submit" value="Enviar">
