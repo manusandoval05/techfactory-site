@@ -4,28 +4,28 @@
 <svg
    version="1.1"
    id="svg1464"
-   width="1695"
+   width="1800"
    height="464"
-   viewBox="0 0 1695 464"
+   viewBox="0 0 1800 464"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1468">
     <rect
-       x="686.53019"
+       x="686.53021"
        y="254.22505"
-       width="2.5857872"
-       height="26.165225"
+       width="2.5857873"
+       height="26.165224"
        id="rect34874" />
   </defs>
   <g
      id="layer1">
     <path
        id="path1564-5"
-       style="fill:#fbbc05;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 81.9375 182.02539 L 1.8613281 320.58789 L 82.910156 457.52539 L 240.98633 460.01758 L 319.74414 321.34766 L 241.5293 184.38672 L 81.9375 182.02539 z M 162.47461 261.29102 A 59.425114 58.851494 0 0 1 221.90039 320.14258 A 59.425114 58.851494 0 0 1 162.47461 378.99414 A 59.425114 58.851494 0 0 1 103.04883 320.14258 A 59.425114 58.851494 0 0 1 162.47461 261.29102 z " />
+       style="fill:#fbbc05;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 81.9375,182.02539 1.8613281,320.58789 82.910156,457.52539 240.98633,460.01758 319.74414,321.34766 241.5293,184.38672 Z m 80.53711,79.26563 a 59.425114,58.851494 0 0 1 59.42578,58.85156 59.425114,58.851494 0 0 1 -59.42578,58.85156 59.425114,58.851494 0 0 1 -59.42578,-58.85156 59.425114,58.851494 0 0 1 59.42578,-58.85156 z" />
     <path
-       style="fill:#34a853;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:#34a853;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 160.8737,57.415484 163.79823,147.50859 264.66316,93.611556 261.37744,4.477589 Z"
        id="path1566-6" />
     <text
