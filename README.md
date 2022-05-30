@@ -1,4 +1,4 @@
-# TechFactory Landing Page
+# FábricaDigital Landing Page
 
 Page built with only **HTML**, **SCSS** and **JavaScript** for simplicity, and with a strong focus on resusable and responsive components. 
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1464"
+   width="1800"
+   height="464"
+   viewBox="0 0 1800 464"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1468">
+    <rect
+       x="686.53021"
+       y="254.22505"
+       width="2.5857873"
+       height="26.165224"
+       id="rect34874" />
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="path1564-5"
+       style="fill:#fbbc05;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 81.9375,182.02539 1.8613281,320.58789 82.910156,457.52539 240.98633,460.01758 319.74414,321.34766 241.5293,184.38672 Z m 80.53711,79.26563 a 59.425114,58.851494 0 0 1 59.42578,58.85156 59.425114,58.851494 0 0 1 -59.42578,58.85156 59.425114,58.851494 0 0 1 -59.42578,-58.85156 59.425114,58.851494 0 0 1 59.42578,-58.85156 z" />
+    <path
+       style="fill:#34a853;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 160.8737,57.415484 163.79823,147.50859 264.66316,93.611556 261.37744,4.477589 Z"
+       id="path1566-6" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:213.333px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:1.5px;fill:#5f6368;fill-opacity:1"
+       x="381.45602"
+       y="407.99185"
+       id="text5086-9"><tspan
+         id="tspan5084-1"
+         x="381.45602"
+         y="407.99185">FábricaDigital</tspan></text>
+  </g>
+</svg>
