@@ -1,4 +1,4 @@
-const BASE_URL = "https://www.techfactory.org.mx";
+const BASE_URL = "https://www.fabricadigital.org.mx";
 
 document.addEventListener("DOMContentLoaded", ()=>{
   const article_container = document.getElementById("article_container");
