@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+$techfactory-yellow: #fbbc05;
+
 *{
     margin: 0;
     padding: 0;
@@ -392,16 +394,20 @@ section{
     justify-content: center;
     a{
         img{
-            max-width: 300px;
-            height: auto;
+            max-height: 100px;
+            width: auto;
         }
     }
 }
-.img-container:hover{
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 5px;
+.img-container.small{
+    a{
+        img{
+            max-height: 80px;
+            width: auto;
+        }
+    }
 }
+
 .information-section{
     min-height: 100vh;
     position: relative;
@@ -891,6 +897,9 @@ section{
         width: calc(101% + 1.3px);
         height: 222px;
     }
+}
+.extra-top-margin{
+    margin-top: 250px;
 }
 @media (max-width: 1110px){
     section{
