@@ -1227,7 +1227,7 @@ section .first {
   margin-top: 250px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1240px) {
   section h1 {
     font-size: 2em;
   }
@@ -1248,7 +1248,7 @@ section .first {
   }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1240px) {
   header.index ul {
     display: -webkit-box;
     display: -ms-flexbox;
