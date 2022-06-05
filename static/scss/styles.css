@@ -621,7 +621,7 @@ section .first {
 }
 
 .information-section .images {
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1281,6 +1281,9 @@ section .first {
     grid-column: 1;
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  .information-section .images {
+    height: 100vh;
   }
 }
 

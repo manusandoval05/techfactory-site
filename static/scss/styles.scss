@@ -454,7 +454,7 @@ section{
         }
     }
     .images{
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         .img-box{
@@ -953,6 +953,9 @@ section{
         .one{
            grid-column: 1;
            grid-row: 1; 
+        }
+        .images{
+            height: 100vh; 
         }
     }
 }
