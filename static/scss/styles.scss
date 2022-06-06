@@ -1,7 +1,255 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-$techfactory-yellow: #fbbc05;
+$yellow: #fbbc05;
+$blue: #4285f4;
+$green: #34a853;
+$red: #eb4335;
 
+.blue{background-color: #4285f4;}
+.green{background-color: #34a853;}
+.red{background-color: #eb4335;}
+.yellow{background-color: #fbbc05;}
+.white{background-color: white;}
+.black{background-color: black;}
+
+.blue-text{color: #4285f4;}
+.green-text{color: #34a853;}
+.red-text{color: #eb4335;}
+.yellow-text{color: #fbbc05;}
+.white-text{color: white;}
+.black-text{color: black;}
+
+.red-fill{
+    .shape-fill{
+        fill: #eb4335;
+    }
+}
+.blue-fill{
+    .shape-fill{
+        fill: #4285f4;
+    }
+}
+.green-fill{
+    .shape-fill{
+        fill: #34a853;
+    }
+}
+.yellow-fill{
+    .shape-fill{
+        fill: #fbbc05;
+    }
+}
+.white-fill{
+    .shape-fill{
+        fill: white; 
+    }
+}
+.complex-wave-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+}
+.triangle-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 127px;
+    }
+
+}
+.book-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 105px;
+    }
+
+}
+.inverted-triangle-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 171px;
+    }
+}
+.tilt-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 225px; 
+    }
+}
+.arrow-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 96px;
+    }
+}
+.wave-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 131px;
+    }
+}
+.curve-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg{
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 222px;
+    }
+}
+.extra-top-margin{
+    margin-top: 250px;
+}
+
+.btn{
+    position: relative;
+    max-width: 300px;
+    border-radius: 10px;
+    line-height: 1.7;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    div{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    span{
+        display: block;
+        position: absolute;
+    }
+    span:nth-child(1){
+        left: 0;
+        bottom: 0;
+        width: 5px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+    span:nth-child(2){
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+    span:nth-child(3){
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+    span:nth-child(4){
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 5px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+}
+.btn:hover{
+    color: rgba(0, 0, 0, 1);
+    background-color: white;
+
+    span:nth-child(1){
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+    span:nth-child(2){
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+    span:nth-child(3){
+        transform: scaleY(1);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+    span:nth-child(4){
+        transform: scaleX(1);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -742,165 +990,7 @@ section{
         }
     }
 }
-.blue{background-color: #4285f4;}
-.green{background-color: #34a853;}
-.red{background-color: #eb4335;}
-.yellow{background-color: #fbbc05;}
-.white{background-color: white;}
-.black{background-color: black;}
-.blue-text{color: #4285f4;}
-.green-text{color: #34a853;}
-.red-text{color: #eb4335;}
-.yellow-text{color: #fbbc05;}
-.white-text{color: white;}
-.black-text{color: black;}
 
-.red-fill{
-    .shape-fill{
-        fill: #eb4335;
-    }
-}
-.blue-fill{
-    .shape-fill{
-        fill: #4285f4;
-    }
-}
-.green-fill{
-    .shape-fill{
-        fill: #34a853;
-    }
-}
-.yellow-fill{
-    .shape-fill{
-        fill: #fbbc05;
-    }
-}
-.white-fill{
-    .shape-fill{
-        fill: white; 
-    }
-}
-.complex-wave-effect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg{
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 150px;
-    }
-}
-.triangle-effect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg{
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 127px;
-    }
-
-}
-.book-effect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg{
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 105px;
-    }
-
-}
-.inverted-triangle-effect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    svg{
-        position: relative;
-        display: block;
-        width: calc(101% + 1.3px);
-        height: 171px;
-    }
-}
-.tilt-effect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg{
-        position: relative;
-        display: block;
-        width: calc(101% + 1.3px);
-        height: 225px; 
-    }
-}
-.arrow-effect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    svg{
-        position: relative;
-        display: block;
-        width: calc(101% + 1.3px);
-        height: 96px;
-    }
-}
-.wave-effect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    svg{
-        position: relative;
-        display: block;
-        width: calc(101% + 1.3px);
-        height: 131px;
-    }
-}
-.curve-effect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    svg{
-        position: relative;
-        display: block;
-        width: calc(101% + 1.3px);
-        height: 222px;
-    }
-}
-.extra-top-margin{
-    margin-top: 250px;
-}
 @media (max-width: 1240px){
     section{
        h1{
