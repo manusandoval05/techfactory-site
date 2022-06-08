@@ -836,6 +836,12 @@ section .first {
   font-weight: 500;
 }
 
+.service-container .card .content ul {
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 1.8;
+}
+
 .service-container .card:hover .icon {
   top: 5px;
   left: calc(50% - 40px);
@@ -881,6 +887,7 @@ section .first {
   text-align: center;
   font-size: 1.5em;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .img-container {
