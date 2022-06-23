@@ -872,6 +872,24 @@ section .first {
   z-index: 5;
 }
 
+.uneven-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 100px;
+  margin: 50px 0;
+}
+
 .text-container {
   margin: 0 30px;
   max-width: 1000px;
@@ -913,6 +931,10 @@ section .first {
   width: auto;
 }
 
+.img-container.extra-small a img {
+  max-height: 50px;
+}
+
 .information-section {
   min-height: 100vh;
   position: relative;
@@ -948,12 +970,19 @@ section .first {
 
 .information-section .content .text li {
   margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .information-section .content .text p {
   font-size: 1.2em;
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.information-section .content .text ul {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 1.2em;
 }
 
 .information-section .content .text .button {
@@ -1506,6 +1535,10 @@ section .first {
     -webkit-transform: translateX(30px);
             transform: translateX(30px);
   }
+  .container .img-container a img {
+    max-width: 80vw;
+    height: auto;
+  }
 }
 
 @media (max-height: 667px) {
@@ -1514,6 +1547,11 @@ section .first {
     font-size: 1.5em;
   }
   .information-section .content .text p {
+    font-size: 1em;
+  }
+  .information-section .content .text ul {
+    text-align: left;
+    margin-left: 30px;
     font-size: 1em;
   }
   header.index {
