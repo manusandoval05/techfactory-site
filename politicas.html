@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}body {counter-reset: h2}
+h2 {counter-reset: h3}
+h3 {counter-reset: h4}
+h4 {counter-reset: h5}
+h5 {counter-reset: h6}
+h2:before {counter-increment: h2; content: counter(h2) ". "}
+h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none }pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><p>Los recursos del programa de Fábrica Digital provienen de Google y son administrados por Knoware, no son recursos federales</p>
+<p>Para ingresar a las plataformas los usuarios, deberán aceptar los términos y condiciones de cada desarrollador y reconocer sus políticas de privacidad, algunas de estas plataformas no son parte del Programa de Fábrica Digital y son propiedad de terceros. Algunas plataformas serán de ingreso exclusivo para las empresas aceptadas en el programa a profundidad, para mentores o usuarios específicos.</p>
+<p>Para las plataformas del programa, te compartimos la siguiente:</p>
+<h1 class="atx" id="politica-de-privacidad">Política de Privacidad</h1>
+<h2 class="atx" id="introduccion">Introducción</h2>
+<p>Con la siguiente declaración de protección de datos, nos gustaría informarle sobre los tipos de datos personales (en adelante, también denominados "datos") que procesamos, con qué fines y en qué medida. La declaración de protección de datos se aplica a todo el procesamiento de datos personales llevados a cabo por nosotros, tanto como parte de la prestación de nuestros servicios como, en particular, en nuestros sitios web, en aplicaciones móviles y dentro de presencias externas en línea, como nuestros perfiles de redes sociales (en lo sucesivo, denominados colectivamente como "oferta en línea"). Los términos utilizados no son específicos de género. Versión: junio 2022&nbsp;</p>
+<h2 class="atx" id="tabla-de-contenidos">Tabla de contenidos</h2>
+<ul>
+<li><p>Introducción</p>
+</li>
+<li><p>Responsable</p>
+</li>
+<li><p>Delegado de protección de datos</p>
+</li>
+<li><p>Descripción general del procesamiento</p>
+</li>
+<li><p>Bases jurídicas pertinentes</p>
+</li>
+<li><p>Medidas de seguridad</p>
+</li>
+<li><p>Transmisión de datos personales</p>
+</li>
+<li><p>Uso de cookies</p>
+</li>
+<li><p>Provisión de la oferta en línea y alojamiento web</p>
+</li>
+<li><p>Registro, inicio de sesión y cuenta de usuario</p>
+</li>
+<li><p>Funciones comunitarias</p>
+</li>
+<li><p>Inicio de sesión único</p>
+</li>
+<li><p>Blogs y medios de publicación</p>
+</li>
+<li><p>Contacto</p>
+</li>
+<li><p>Chatbots y funciones de chat</p>
+</li>
+<li><p>Servicios en la nube</p>
+</li>
+<li><p>Boletín y notificaciones electrónicas</p>
+</li>
+<li><p>Comunicación promocional por correo electrónico, correo, teléfono</p>
+</li>
+<li><p>Análisis, monitorización y optimización web</p>
+</li>
+<li><p>Marketing online</p>
+</li>
+<li><p>Presencia en redes sociales (social media)</p>
+</li>
+<li><p>Plugins y funciones y contenido incrustados</p>
+</li>
+<li><p>Herramientas de gestión, organización y auxiliares</p>
+</li>
+<li><p>Eliminación de datos</p>
+</li>
+<li><p>Modificación y actualización de la política de privacidad</p>
+</li>
+<li><p>Derechos de los interesados</p>
+</li>
+<li><p>Definiciones</p>
+</li>
+</ul>
+<h2 class="atx" id="responsable">Responsable</h2>
+<p>Knoware, SA de CV, Ocotepec 164-5, San Jerónimo Lídice, 10200 La Magdalena Contreras, Ciudad de México, México. Representantes autorizados: Ligia G. Arroyo Anglada. Dirección de correo electrónico: <a href="mailto:ligia.arroyo@knoware.biz">ligia.arroyo@knoware.biz</a>. Página Web: <a href="https://www.knoware.biz">https://www.knoware.biz</a>.</p>
+<h2 class="atx" id="delegado-de-proteccion-de-datos">Delegado de protección de datos</h2>
+<p><a href="mailto:contacto@knoware.biz">contacto@knoware.biz</a></p>
+<h2 class="atx" id="descripcion-general-del-procesamiento">Descripción general del procesamiento</h2>
+<p>La siguiente descripción general resume los tipos de datos procesados y los fines de su procesamiento y se refiere a los interesados.</p>
+<p>Tipos de datos tratados</p>
+<ul>
+<li><p>Datos del evento (Facebook) ("Datos del evento" son datos que podemos transmitir a Facebook, por ejemplo, a través de Facebook Pixel (a través de aplicaciones u otros medios), y se relacionan con personas o sus acciones; los datos incluyen, por ejemplo, información sobre visitas a sitios web, interacciones con contenido, funciones, instalaciones de aplicaciones, compras de productos, etc.; los datos del evento se procesan con el fin de crear grupos objetivo para contenido e información publicitaria (Audiencias personalizadas). Los datos del evento se procesan con el fin de crear grupos objetivo para el contenido y la información publicitaria (audiencias personalizadas); Los datos del evento no incluyen el contenido real (como comentarios escritos), no hay información de inicio de sesión y no hay información de contacto (es decir, no hay nombres, direcciones de correo electrónico y números de teléfono). Los datos del evento son eliminados por Facebook después de un máximo de dos años, los grupos objetivo se formaron a partir de ellos con la eliminación de nuestra cuenta de Facebook).</p>
+</li>
+<li><p>Datos de inventario (por ejemplo, nombres, direcciones).</p>
+</li>
+<li><p>Datos de contenido (por ejemplo, entradas en formularios en línea).</p>
+</li>
+<li><p>Información de contacto (por ejemplo, correo electrónico, números de teléfono).</p>
+</li>
+<li><p>Metadatos/datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Datos de uso (por ejemplo, páginas web visitadas, interés en el contenido, tiempos de acceso).</p>
+</li>
+<li><p>Datos del contrato (por ejemplo, objeto del contrato, plazo, categoría de cliente).</p>
+</li>
+<li><p>Datos de pago (por ejemplo, datos bancarios, facturas, historial de pagos).</p>
+</li>
+</ul>
+<p>Categorías de personas afectadas</p>
+<ul>
+<li><p>Empleados (por ejemplo, empleados, solicitantes, ex empleados).</p>
+</li>
+<li><p>Partes interesadas.</p>
+</li>
+<li><p>Socio de comunicación.</p>
+</li>
+<li><p>Clientela.</p>
+</li>
+<li><p>Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+</ul>
+<p>Finalidades del tratamiento</p>
+<ul>
+<li><p>Pruebas A/B.</p>
+</li>
+<li><p>Procedimiento de solicitud.</p>
+</li>
+<li><p>Provisión de nuestra oferta en línea y facilidad de uso.</p>
+</li>
+<li><p>Medición de la conversión (medición de la eficacia de las medidas de marketing).</p>
+</li>
+<li><p>Procedimientos de oficina y organización.</p>
+</li>
+<li><p>Seguimiento de clics.</p>
+</li>
+<li><p>Red de entrega de contenido (CDN).</p>
+</li>
+<li><p>Marketing directo (por ejemplo, por correo electrónico o correo postal).</p>
+</li>
+<li><p>Comentarios (por ejemplo, recopilación de comentarios a través de un formulario en línea).</p>
+</li>
+<li><p>Mapas de calor (movimientos del ratón por parte del usuario, que se combinan para formar una imagen general).</p>
+</li>
+<li><p>Marketing.</p>
+</li>
+<li><p>Solicitudes de contacto y comunicación.</p>
+</li>
+<li><p>Perfiles con información relacionada con el usuario (creación de perfiles de usuario).</p>
+</li>
+<li><p>Medición del alcance (por ejemplo, estadísticas de acceso, reconocimiento de visitantes que regresan).</p>
+</li>
+<li><p>Medidas de seguridad.</p>
+</li>
+<li><p>Encuestas y cuestionarios (por ejemplo, encuestas con opciones de entrada, preguntas de opción múltiple).</p>
+</li>
+<li><p>Prestación de servicios contractuales y atención al cliente.</p>
+</li>
+<li><p>Gestión y respuesta a consultas.</p>
+</li>
+</ul>
+<h2 class="atx" id="bases-juridicas-pertinentes">Bases jurídicas pertinentes</h2>
+<p>A continuación, encontrará una descripción general de la base legal de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) &nbsp; &nbsp; y el Reglamento General de Protección de Datos (GDPR) en la que basamos el procesamiento de datos personales. Tenga en cuenta que, además de las disposiciones del RGPD, pueden aplicarse disposiciones nacionales de protección de datos de su país de residencia o domicilio o de nuestro país. En caso de que las bases jurídicas más específicas sean relevantes en casos individuales, le informaremos de ellas en la declaración de protección de datos.</p>
+<ul>
+<li><p>Consentimiento (Art. 6 (1) p. 1 lit. a. DSGVO) - El interesado ha dado su consentimiento para el procesamiento de datos personales que le conciernen para un propósito o fines específicos.</p>
+</li>
+<li><p>Ejecución del contrato y solicitudes precontractuales (art. 6, apartado 1, letra .b. DSGVO) - El tratamiento es necesario para la ejecución de un contrato en el que el interesado es parte o para la ejecución de las medidas precontractuales adoptadas a petición del interesado.</p>
+</li>
+<li><p>Intereses legítimos (Art. 6 (1) p. 1 lit. f. DSGVO) - El procesamiento es necesario para proteger los intereses legítimos del controlador o de un tercero, a menos que dichos intereses sean anulados por los intereses o los derechos y libertades fundamentales del interesado que requieren la protección de datos personales.</p>
+</li>
+</ul>
+<p>Regulaciones nacionales de protección de datos en México: Además de las regulaciones de protección de datos del Reglamento General de Protección de Datos, las regulaciones nacionales sobre protección de datos se aplican en México. Estos incluyen, en particular, la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Además, pueden aplicarse las leyes estatales de protección de datos de los estados federales individuales.</p>
+<h2 class="atx" id="medidas-de-seguridad">Medidas de seguridad</h2>
+<p>Tomamos las medidas técnicas y organizativas adecuadas para garantizar un nivel de protección adecuado al riesgo de acuerdo con los requisitos legales, teniendo en cuenta el estado de la técnica, los costos de implementación y la naturaleza, alcance, circunstancias y propósitos del procesamiento, así como las diferentes probabilidades de ocurrencia y el alcance de la amenaza a los derechos y libertades de las personas físicas. Las medidas incluyen, en particular, la salvaguardia de la confidencialidad, integridad y disponibilidad de los datos mediante el control del acceso físico y electrónico a los datos, así como el acceso, la entrada, la transferencia, la salvaguardia de la disponibilidad y su separación. Además, hemos establecido procedimientos para garantizar el ejercicio de los derechos de los interesados, la eliminación de datos y las respuestas al compromiso de datos. Además, tenemos en cuenta la protección de datos personales desde el desarrollo o la selección de hardware, software y procesos de acuerdo con el principio de protección de datos, a través del diseño de tecnología y a través de configuraciones predeterminadas amigables con la protección de datos. Cifrado SSL (https): Para proteger sus datos transmitidos a través de nuestra oferta en línea, utilizamos el cifrado SSL. Puede reconocer dichas conexiones cifradas por el prefijo https:// en la barra de direcciones de su navegador.</p>
+<h2 class="atx" id="transmision-de-datos-personales">Transmisión de datos personales</h2>
+<p>En el curso de nuestro procesamiento de datos personales, puede suceder que los datos se transfieran o divulguen a otros organismos, empresas, unidades organizativas legalmente independientes o personas. Los destinatarios de estos datos pueden incluir, por ejemplo, proveedores de servicios encargados de tareas de TI o proveedores de servicios y contenidos que están integrados en un sitio web. En tales casos, cumplimos con los requisitos legales y, en particular, celebramos contratos o acuerdos apropiados que sirven para proteger sus datos con los destinatarios de sus datos.</p>
+<h2 class="atx" id="uso-de-cookies">Uso de cookies</h2>
+<p>Las cookies son archivos de texto que contienen datos de sitios web o dominios visitados y son almacenados por un navegador en el ordenador del usuario. Una cookie se utiliza principalmente para almacenar información sobre un usuario durante o después de su visita dentro de una oferta en línea. La información almacenada puede incluir, por ejemplo, la configuración de idioma en un sitio web, el estado de inicio de sesión, un carrito de compras o dónde se vio un video. El término cookies también incluye otras tecnologías que realizan las mismas funciones que las cookies (por ejemplo, cuando la información del usuario se almacena utilizando identificadores en línea seudónimos, también denominados "ID de usuario").</p>
+<p>Se distinguen los siguientes tipos y funciones de cookies:</p>
+<ul>
+<li><p>Cookies temporales (también: cookies de sesión): Las cookies temporales se eliminan a más tardar después de que un usuario haya dejado una oferta en línea y cerrado su navegador.</p>
+</li>
+<li><p>Cookies permanentes: Las cookies permanentes permanecen almacenadas incluso después de que se cierra el navegador. Por ejemplo, el estado de inicio de sesión se puede guardar o el contenido preferido se puede mostrar directamente cuando el usuario visita un sitio web nuevamente. Del mismo modo, los intereses de los usuarios utilizados para la medición del alcance o con fines de marketing pueden almacenarse en dicha cookie.</p>
+</li>
+<li><p>Cookies de origen: Las cookies de origen son establecidas por Konoware.</p>
+</li>
+<li><p>Cookies de terceros (también: cookies de terceros): Las cookies de terceros son utilizadas principalmente por anunciantes (los llamados terceros) para procesar la información del usuario.</p>
+</li>
+<li><p>Cookies necesarias (también: esenciales o absolutamente necesarias): Las cookies pueden ser absolutamente necesarias para el funcionamiento de un sitio web (por ejemplo, para almacenar inicios de sesión u otras entradas de usuario o por razones de seguridad).</p>
+</li>
+<li><p>Cookies de estadísticas, marketing y personalización: Además, las cookies generalmente también se utilizan en el contexto de la medición del rango y cuando los intereses o el comportamiento de un usuario (por ejemplo, ver cierto contenido, usar funciones, etc.) en sitios web individuales se almacenan en un perfil de usuario. Dichos perfiles se utilizan, por ejemplo, para mostrar a los usuarios contenido que coincide con sus intereses potenciales. Este proceso también se conoce como "seguimiento", es decir, seguimiento de los intereses potenciales de los usuarios. En la medida en que utilicemos cookies o tecnologías de "seguimiento", le informaremos por separado en nuestra política de privacidad o en el contexto de la obtención del consentimiento.</p>
+</li>
+</ul>
+<p>Notas sobre bases legales: La base legal sobre la que procesamos sus datos personales utilizando cookies depende de si le pedimos su consentimiento. Si este es el caso y usted consiente el uso de cookies, la base legal para el procesamiento de sus datos es su consentimiento declarado. De lo contrario, los datos procesados con la ayuda de cookies se procesan sobre la base de nuestros intereses legítimos (por ejemplo, en una operación comercial de nuestra oferta en línea y su mejora) o, si el uso de cookies es necesario para cumplir con nuestras obligaciones contractuales.</p>
+<p>Período de almacenamiento: Si no le proporcionamos información explícita sobre el período de almacenamiento de las cookies permanentes (por ejemplo, en el contexto de la llamada suscripción de cookies), asuma que el período de almacenamiento puede ser de hasta dos años.</p>
+<p>Información general sobre revocación y objeción (opt-out): Dependiendo de si el procesamiento se basa en el consentimiento o el permiso legal, tiene la opción en cualquier momento de revocar cualquier consentimiento que haya dado u oponerse al procesamiento de sus datos mediante tecnologías de cookies (denominados colectivamente como "opt-out"). Inicialmente puede declarar su objeción mediante la configuración de su navegador, por ejemplo, desactivando el uso de cookies (por lo que esto también puede restringir la funcionalidad de nuestra oferta en línea). Una objeción al uso de cookies con fines de marketing en línea también se puede declarar por medio de una variedad de servicios, especialmente en el caso del seguimiento, a través de los sitios web <a href="https://optout.aboutads.info">https://optout.aboutads.info</a> y <a href="https://www.youronlinechoices.com/">https://www.youronlinechoices.com/</a>. Además, puede obtener más instrucciones sobre cómo oponerse en el contexto de la información y las cookies utilizadas.</p>
+<p>Tratamiento de datos de cookies con base en el consentimiento: Utilizamos un procedimiento de gestión de consentimiento de cookies en el que el consentimiento de los usuarios para el uso de cookies, o el procesamiento y los proveedores mencionados en el procedimiento de gestión de consentimiento de cookies, pueden ser obtenidos, gestionados y revocados por los usuarios. En este contexto, la declaración de consentimiento se almacena para no tener que repetir su solicitud y poder acreditar el consentimiento de acuerdo con la obligación legal. El almacenamiento puede tener lugar en el lado del servidor y / o en una cookie (la llamada cookie de suscripción, o con la ayuda de tecnologías comparables), para poder asignar el consentimiento a un usuario o su dispositivo. Sujeto a información individual sobre los proveedores de servicios de gestión de cookies, se aplica la siguiente información: La duración del almacenamiento del consentimiento puede ser de hasta dos años. Se crea y almacena un identificador de usuario seudónimo con el momento del consentimiento, información sobre el alcance del consentimiento (por ejemplo, qué categorías de cookies y / o proveedores de servicios), así como el navegador, el sistema y el dispositivo final utilizado.</p>
+<ul>
+<li><p>Tipos de datos procesados: Datos de uso (por ejemplo, páginas web visitadas, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Base jurídica:&nbsp; Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<h2 class="atx" id="provision-de-la-oferta-en-linea-y-alojamiento-web">Provisión de la oferta en línea y alojamiento web</h2>
+<p>Con el fin de proporcionar nuestra oferta en línea de forma segura y eficiente, utilizamos los servicios de uno o más proveedores de alojamiento web desde cuyos servidores (o servidores administrados por ellos) se puede acceder a la oferta en línea. Para estos fines, podemos utilizar servicios de infraestructura y plataforma, capacidad de cómputo, espacio de almacenamiento y servicios de bases de datos, así como servicios de seguridad y servicios de mantenimiento técnico. Los datos procesados como parte de la provisión de la oferta de alojamiento pueden incluir toda la información relacionada con los usuarios de nuestra oferta en línea, que se genera como parte del uso y la comunicación. Esto incluye regularmente la dirección IP, que es necesaria para poder entregar el contenido de las ofertas en línea a los navegadores, y todas las entradas realizadas dentro de nuestra oferta en línea o desde sitios web. Envío y alojamiento de correo electrónico: Los servicios de alojamiento web que utilizamos también incluyen el envío, recepción y almacenamiento de correos electrónicos. Para estos fines, se procesan las direcciones de los destinatarios y remitentes, así como información adicional sobre el envío de correo electrónico (por ejemplo, los proveedores involucrados) y el contenido de los respectivos correos electrónicos. Los datos antes mencionados también pueden procesarse con fines de detección de SPAM. Tenga en cuenta que los correos electrónicos generalmente no se envían cifrados en Internet. Como regla general, los correos electrónicos se cifran en tránsito, pero (a menos que se utilice un método de cifrado de extremo a extremo) no en los servidores desde los que se envían y reciben. Por lo tanto, no podemos asumir ninguna responsabilidad por la ruta de transmisión de los correos electrónicos entre el remitente y la recepción en nuestro servidor. Recopilación de datos de acceso y archivos de registro: Nosotros mismos (o nuestro proveedor de alojamiento web) recopilamos datos sobre cada acceso al servidor (los llamados archivos de registro del servidor). Los archivos de registro del servidor pueden incluir la dirección y el nombre de las páginas web y los archivos a los que se accede, la fecha y hora de acceso, el volumen de datos transferidos, la notificación de acceso exitoso, el tipo y la versión del navegador, el sistema operativo del usuario, la URL de referencia (la página visitada anteriormente) y, por regla general, las direcciones IP y el proveedor solicitante. Los archivos de registro del servidor pueden utilizarse, por un lado, con fines de seguridad, por ejemplo, para evitar la sobrecarga del servidor (especialmente en el caso de ataques abusivos, los llamados ataques DDoS) y, por otro lado, para garantizar la utilización de los servidores y su estabilidad. Red de entrega de contenido: Utilizamos una "red de entrega de contenido" (CDN). Una CDN es un servicio con la ayuda del cual el contenido de una oferta en línea, en particular archivos multimedia grandes como gráficos o scripts de programas, se puede entregar de manera más rápida y segura con la ayuda de servidores distribuidos regionalmente conectados a través de Internet.</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de contenido (por ejemplo, entradas en formularios en línea), datos de uso (por ejemplo, sitios web visitados, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Finalidades del tratamiento: Provisión de nuestra oferta en línea y facilidad de uso, Content Delivery Network (CDN).</p>
+</li>
+<li><p>Base jurídica:Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<h2 class="atx" id="registro-inicio-de-sesion-y-cuenta-de-usuario">Registro, inicio de sesión y cuenta de usuario</h2>
+<p>Los usuarios pueden crear una cuenta de usuario. En el curso del registro, los usuarios reciben los datos obligatorios requeridos y se procesan con el fin de proporcionar la cuenta de usuario sobre la base del cumplimiento de la obligación contractual. Los datos procesados incluyen, en particular, la información de inicio de sesión (nombre de usuario, contraseña y una dirección de correo electrónico). En el contexto del uso de nuestras funciones de registro e inicio de sesión, así como el uso de la cuenta de usuario, almacenamos la dirección IP y la hora de la acción del usuario respectiva. El almacenamiento se basa en nuestros intereses legítimos, así como en los de los usuarios en protección contra el uso indebido y otros usos no autorizados. Como cuestión de principio, estos datos no se transmiten a terceros a menos que sea necesario para el enjuiciamiento de nuestras reclamaciones o exista una obligación legal de hacerlo. Los usuarios pueden ser informados por correo electrónico sobre los procesos relevantes para su cuenta de usuario, como los cambios técnicos. Tipos de datos procesados: datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono), datos de contenido (por ejemplo, entradas en formularios en línea), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+<ul>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Finalidades del tratamiento: prestación de servicios contractuales y atención al cliente, medidas de seguridad, gestión y respuesta a las solicitudes.</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<h3 class="atx" id="inicio-de-sesion-unico">Inicio de sesión único</h3>
+<p>"Inicio de sesión único" o "inicio de sesión único o autenticación" se refiere a los procedimientos que permiten a los usuarios iniciar sesión en un proveedor de procedimientos de inicio de sesión único (por ejemplo, una red social), incluida nuestra oferta en línea, con la ayuda de una cuenta de usuario. El requisito previo para la autenticación de inicio de sesión único es que los usuarios estén registrados en el proveedor de inicio de sesión único respectivo e introduzcan los datos de acceso necesarios en el formulario en línea proporcionado a tal efecto, o que ya estén registrados en el proveedor de inicio de sesión único y confirmen el registro de inicio de sesión único mediante un botón. La autenticación se realiza directamente con el proveedor de inicio de sesión único respectivo. En el curso de dicha autenticación, recibimos un ID de usuario con la información de que el usuario ha iniciado sesión bajo este ID de usuario en el proveedor de inicio de sesión único respectivo y un ID que no podemos usar para otros fines (el llamado "identificador de usuario"). El hecho de que se nos transmitan datos adicionales depende únicamente del procedimiento de inicio de sesión único utilizado, de las liberaciones de datos seleccionadas como parte del proceso de autenticación y también de los datos que los usuarios hayan publicado en la privacidad u otra configuración de la cuenta de usuario con el proveedor de inicio de sesión único. Dependiendo del proveedor de inicio de sesión único y la elección del usuario, estos pueden ser datos diferentes, generalmente la dirección de correo electrónico y el nombre de usuario. La contraseña introducida como parte del procedimiento de inicio de sesión único con el proveedor de inicio de sesión único no es visible para nosotros ni almacenada por nosotros. Se les pide a los usuarios que tengan en cuenta que sus datos almacenados con nosotros pueden coincidir automáticamente con su cuenta de usuario con el proveedor de inicio de sesión único, pero que esto no siempre es posible o realmente ocurre. Si, por ejemplo, las direcciones de correo electrónico de los usuarios cambian, deben cambiarlas manualmente en su cuenta de usuario con nosotros. Podemos utilizar el inicio de sesión único, si se acuerda con los usuarios, como parte o antes de la ejecución del contrato, cuando se les haya pedido a los usuarios que lo hagan, lo procesen como parte del consentimiento y lo utilicen de otro modo en función de los intereses legítimos de nosotros y los intereses de los usuarios en un sistema de inicio de sesión efectivo y seguro. Si los usuarios alguna vez deciden que ya no desean usar el vínculo de su cuenta de usuario con el proveedor de inicio de sesión único para el procedimiento de inicio de sesión único, deben eliminar este vínculo dentro de su cuenta de usuario con el proveedor de inicio de sesión único. Si los usuarios desean eliminar sus datos de nosotros, deben cancelar su registro con nosotros.</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Finalidades del tratamiento: prestación de servicios contractuales y atención al cliente, procedimiento de registro.</p>
+</li>
+<li><p>Base jurídica: Consentimiento (art. 6 párr. 1 p. 1 lit. a. DSGVO), Ejecución del contrato y solicitudes precontractuales (Art. 6 párr. 1 p. 1 lit.b. DSGVO), Intereses legítimos (Art. 6 párr. 1 p. 1 lit. f. DSGVO).</p>
+</li>
+</ul>
+<h2 class="atx" id="contacto">Contacto</h2>
+<p>Al ponerse en contacto con nosotros (por ejemplo, mediante un formulario de contacto, correo electrónico, teléfono o a través de las redes sociales), la información de las personas que preguntan se procesa en la medida necesaria para responder a las solicitudes de contacto y cualquier medida solicitada. La respuesta a las solicitudes de contacto en el contexto de las relaciones contractuales o precontractuales se realiza para cumplir con nuestras obligaciones contractuales o para responder a consultas (pre)contractuales y de otro modo sobre la base de intereses legítimos en responder a las consultas.</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono), datos de contenido (por ejemplo, entradas en formularios en línea), datos de uso (por ejemplo, sitios web visitados, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Personas afectadas: Interlocutores de comunicación.</p>
+</li>
+<li><p>Finalidades del tratamiento: solicitudes de contacto y comunicación.</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<h2 class="atx" id="servicios-en-la-nube">Servicios en la nube</h2>
+<p>Utilizamos servicios de software accesibles a través de Internet y que se ejecutan en los servidores de sus proveedores (los llamados "servicios en la nube", también denominados "software como servicio") para los siguientes fines: almacenamiento y gestión de documentos, gestión de calendarios, correo electrónico, hojas de cálculo y presentaciones, compartir documentos, contenido e información con destinatarios específicos o publicar páginas web, formularios u otro contenido e información,&nbsp; así como chats y participación en conferencias de audio y video. En este contexto, los datos personales pueden procesarse y almacenarse en los servidores de los proveedores, en la medida en que formen parte de los procesos de comunicación con nosotros o sean procesados por nosotros según lo establecido en el contexto de esta política de privacidad. Estos datos pueden incluir, en particular, datos maestros y datos de contacto de los usuarios, datos sobre transacciones, contratos, otros procesos y su contenido. Los proveedores de servicios en la nube también procesan los datos de uso y los metadatos utilizados por ellos con fines de seguridad y optimización del servicio. Si utilizamos servicios en la nube para proporcionar formularios u otros documentos y contenido a otros usuarios o sitios web de acceso público, los proveedores pueden almacenar cookies en los dispositivos de los usuarios con fines de análisis web o para recordar la configuración de los usuarios (por ejemplo, en el caso del control de medios). Notas sobre bases legales: Si solicitamos el consentimiento para utilizar los servicios en la nube, la base legal del procesamiento es el consentimiento. Además, su uso puede ser un componente de nuestros servicios (pre)contractuales, siempre que el uso de los servicios en la nube se haya acordado dentro de este marco. De lo contrario, los datos de los usuarios se procesan sobre la base de nuestros intereses legítimos (es decir, el interés en procesos de gestión y colaboración eficientes y seguros).</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono), datos de contenido (por ejemplo, entradas en formularios en línea), datos de uso (por ejemplo, sitios web visitados, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Personas afectadas: Clientes, empleados (por ejemplo, empleados, solicitantes, ex empleados), partes interesadas, socios de comunicación.</p>
+</li>
+<li><p>Finalidades del tratamiento: procedimientos ofimáticos y organizativos.</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</li>
+</ul>
+<p>Comunicación promocional por correo electrónico, correo, teléfono</p>
+<p>Procesamos datos personales con fines de comunicación promocional, que puede tener lugar a través de varios canales, como correo electrónico, teléfono, correo, de acuerdo con los requisitos legales. Los destinatarios tienen derecho a revocar el consentimiento otorgado en cualquier momento o a oponerse a las comunicaciones promocionales en cualquier momento. Después de la revocación u objeción, podemos almacenar los datos necesarios para demostrar el consentimiento durante un máximo de tres años en función de nuestros intereses legítimos antes de eliminarlos. El tratamiento de estos datos se limita a la finalidad de una posible defensa frente a reclamaciones. Una solicitud de eliminación individual es posible en cualquier momento, siempre que la existencia anterior del consentimiento se confirme al mismo tiempo.</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono).</p>
+</li>
+<li><p>Personas afectadas: Interlocutores de comunicación.</p>
+</li>
+<li><p>Finalidades del tratamiento: marketing directo (por ejemplo, por correo electrónico o correo postal).</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<p>Análisis, monitorización y optimización web</p>
+<p>El análisis web (también conocido como "medición de alcance") se utiliza para evaluar el flujo de visitantes a nuestra oferta en línea y puede incluir comportamiento, intereses o información demográfica sobre los visitantes, como edad o género, como valores seudónimos. Con la ayuda del análisis de alcance, podemos reconocer, por ejemplo, en qué momento nuestra oferta en línea o sus funciones o contenido se utilizan con mayor frecuencia o invitan a la reutilización. Del mismo modo, podemos entender qué áreas requieren optimización. Además del análisis web, también podemos utilizar procedimientos de prueba, por ejemplo, para probar y optimizar diferentes versiones de nuestra oferta en línea o sus componentes. Para estos fines, los llamados perfiles de usuario pueden crearse y almacenarse en un archivo (la llamada "cookie") o se pueden utilizar procedimientos similares con el mismo propósito. Esta información puede incluir, por ejemplo, contenido visto, sitios web visitados y elementos utilizados allí, e información técnica como el navegador utilizado, el sistema informático utilizado e información sobre los tiempos de uso. Si los usuarios han dado su consentimiento para la recopilación de sus datos de ubicación, esto también puede procesarse, dependiendo del proveedor. Las direcciones IP de los usuarios también se almacenan. Sin embargo, utilizamos un procedimiento de enmascaramiento de IP (es decir, seudonimización acortando la dirección IP) para proteger a los usuarios. En general, en el contexto del análisis web, las pruebas A / B y la optimización, no se almacenan datos claros de los usuarios (como direcciones de correo electrónico o nombres), sino seudónimos. Esto significa que nosotros, así como los proveedores del software utilizado, no conocemos la identidad real de los usuarios, sino solo la información almacenada en sus perfiles para los fines de los procedimientos respectivos. Notas sobre bases legales: Si solicitamos a los usuarios su consentimiento para utilizar proveedores externos, la base legal para el procesamiento de datos es el consentimiento. De lo contrario, los datos de los usuarios se procesan sobre la base de nuestros intereses legítimos (es decir, el interés en servicios eficientes, económicos y amigables para el destinatario). En este contexto, también nos gustaría remitirle a la información sobre el uso de cookies en esta política de privacidad.</p>
+<ul>
+<li><p>Tipos de datos procesados: Datos de uso (por ejemplo, páginas web visitadas, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Fines del procesamiento: Medición del alcance (por ejemplo, estadísticas de acceso, reconocimiento de visitantes que regresan), perfiles con información relacionada con el usuario (creación de perfiles de usuario), seguimiento de clics, pruebas A / B, comentarios (por ejemplo, recopilación de comentarios a través de formularios en línea), mapas de calor (movimientos del mouse por parte de los usuarios que se combinan para formar una imagen general), encuestas y cuestionarios (por ejemplo, encuestas con opciones de entrada,&nbsp; preguntas de opción múltiple), marketing.</p>
+</li>
+<li><p>Medidas de seguridad: Enmascaramiento IP (seudonimización de la dirección IP).</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<p>Servicios utilizados y proveedores de servicios:</p>
+<ul>
+<li><p>Google Analytics: Medición de alcance y análisis web; proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda; empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://marketingplatform.google.com/intl/de/about/analytics/">https://marketingplatform.google.com/intl/de/about/analytics/</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+</li>
+<li><p>Google Tag Manager: Google Tag Manager es una solución con la que podemos gestionar las llamadas etiquetas de sitios web a través de una interfaz y así integrar otros servicios en nuestra oferta en línea (consulte más información en esta política de privacidad). Con el propio Tag Manager (que implementa las etiquetas), por lo tanto, no se crean perfiles de usuarios ni se almacenan cookies, por ejemplo. Google solo aprende la dirección IP del usuario, que es necesaria para ejecutar Google Tag Manager. Proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://marketingplatform.google.com">https://marketingplatform.google.com</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+</li>
+<li><p>Hotjar: Pruebas y Optimización; Proveedor del servicio: Hotjar Ltd, 3 Lyons Range, 20 Bisazza Street, Sliema SLM 1640, Malta ; Sitio web: <a href="https://www.hotjar.com">https://www.hotjar.com</a>; Política de privacidad: <a href="https://www.hotjar.com/legal/policies/privacy">https://www.hotjar.com/legal/policies/privacy</a>. Política de cookies: <a href="https://www.hotjar.com/legal/policies/cookie-information">https://www.hotjar.com/legal/policies/cookie-information</a>; Eliminación de datos: Las cookies que utiliza Hotjar tienen diferentes "vidas"; algunos siguen siendo válidos hasta por 365 días, otros solo durante la visita actual; Opt-out: <a href="https://www.hotjar.com/legal/compliance/opt-out">https://www.hotjar.com/legal/compliance/opt-out</a>.</p>
+</li>
+<li><p>Matomo: La información generada por la cookie sobre su uso de este sitio web se almacena solo en nuestro servidor y no se comparte con terceros; Proveedor de servicios: Análisis web autohospedado / medición de alcance; Sitio web: <a href="https://matomo.org/">https://matomo.org/</a>; Eliminación de datos: Las cookies tienen un período máximo de almacenamiento de 13 meses.</p>
+</li>
+</ul>
+<h2 class="atx" id="marketing-online">Marketing online</h2>
+<p>Procesamos datos personales con fines de marketing en línea, que pueden incluir, en particular, el marketing de espacios publicitarios o la visualización de contenido promocional y de otro tipo (colectivamente, "Contenido") en función de los intereses potenciales de los usuarios y la medición de su efectividad. Para estos fines, se crean y almacenan los llamados perfiles de usuario en un archivo (la llamada "cookie") o se utilizan procedimientos similares, mediante los cuales se almacena la información sobre el usuario relevante para la presentación del contenido antes mencionado. Esta información puede incluir, por ejemplo, contenido visto, sitios web visitados, redes en línea utilizadas, pero también socios de comunicación e información técnica como el navegador utilizado, el sistema informático utilizado e información sobre los tiempos de uso. Si los usuarios han dado su consentimiento para la recopilación de sus datos de ubicación, esto también puede ser procesado. Las direcciones IP de los usuarios también se almacenan. Sin embargo, utilizamos procedimientos de enmascaramiento de IP disponibles (es decir, seudonimización acortando la dirección IP) para proteger a los usuarios. En general, no se almacenan datos claros del usuario (como direcciones de correo electrónico o nombres) como parte del proceso de marketing en línea, sino seudónimos. Esto significa que nosotros, así como los proveedores de los procedimientos de marketing en línea, no conocemos la identidad real de los usuarios, sino solo la información almacenada en sus perfiles. La información en los perfiles se suele almacenar en las cookies o mediante procedimientos similares. Estas cookies generalmente también se pueden leer en otros sitios web que utilizan el mismo procedimiento de marketing en línea y analizarse con el fin de mostrar contenido, así como complementarse con más datos y almacenarse en el servidor del proveedor de procedimientos de marketing en línea. Excepcionalmente, los datos claros pueden estar asociados con los perfiles. Este es el caso si, por ejemplo, los usuarios son miembros de una red social cuyos procedimientos de marketing online utilizamos y la red vincula los perfiles de los usuarios con los datos antes mencionados. Le pedimos que tenga en cuenta que los usuarios pueden hacer acuerdos adicionales con los proveedores, por ejemplo, dando su consentimiento como parte del proceso de registro. En principio, solo recibimos acceso a información resumida sobre el éxito de nuestros anuncios. Sin embargo, en el contexto de las llamadas mediciones de conversión, podemos verificar cuáles de nuestros métodos de marketing en línea han llevado a una llamada conversión, es decir, por ejemplo, a un contrato que se celebra con nosotros. La medición de conversión se utiliza únicamente para analizar el éxito de nuestras medidas de marketing. A menos que se indique lo contrario, le pedimos que asuma que las cookies utilizadas se almacenarán durante un período de dos años. Notas sobre bases legales: Si solicitamos a los usuarios su consentimiento para utilizar proveedores externos, la base legal para el procesamiento de datos es el consentimiento. De lo contrario, los datos de los usuarios se procesan sobre la base de nuestros intereses legítimos (es decir, el interés en servicios eficientes, económicos y amigables para el destinatario). En este contexto, también nos gustaría remitirle a la información sobre el uso de cookies en esta política de privacidad.</p>
+<ul>
+<li><p>Tipos de datos procesados: Datos de uso (por ejemplo, páginas web visitadas, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Finalidades del tratamiento: marketing, elaboración de perfiles con información relacionada con el usuario (creación de perfiles de usuario), medición de la conversión (medición de la eficacia de las medidas de marketing).</p>
+</li>
+<li><p>Medidas de seguridad: Enmascaramiento IP (seudonimización de la dirección IP).</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</li>
+<li><p>Opt-out: Nos referimos a los avisos de protección de datos de los respectivos proveedores y las opciones de exclusión voluntaria dadas para los proveedores. Si no se ha especificado ninguna opción explícita de exclusión, tiene la opción de desactivar las cookies en la configuración de su navegador. Sin embargo, esto puede restringir las funciones de nuestra oferta en línea. Por lo tanto, recomendamos las siguientes opciones adicionales de exclusión voluntaria, que se ofrecen en resumen para las áreas respectivas:</p>
+</li>
+<li><p>Europa: <a href="https://www.youronlinechoices.eu">https://www.youronlinechoices.eu</a>.&nbsp;</p>
+</li>
+<li><p>Canadá: <a href="https://www.youradchoices.ca/choices">Opt-Out Tools — AdChoices in Canada</a>.</p>
+</li>
+<li><p>Estados Unidos: <a href="https://www.aboutads.info/choices">https://www.aboutads.info/choices</a>.&nbsp;</p>
+</li>
+<li><p>Territorio cruzado: <a href="https://optout.aboutads.info">https://optout.aboutads.info</a>.</p>
+</li>
+</ul>
+<p>Servicios utilizados y proveedores de servicios:</p>
+<ul>
+<li>Google Ads y la medición de conversiones: Utilizamos el método de marketing en línea "Google Ads" para colocar anuncios en la red publicitaria de Google (por ejemplo, en resultados de búsqueda, en videos, en páginas web, etc.) para que se muestren a los usuarios que tienen un presunto interés en los anuncios. Además, medimos la conversión de los anuncios. Sin embargo, solo conocemos el número total anónimo de usuarios que hicieron clic en nuestro anuncio y fueron redirigidos a una página etiquetada con una llamada "etiqueta de seguimiento de conversiones". Sin embargo, nosotros mismos no recibimos ninguna información que pueda ser utilizada para identificar a los usuarios. Proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://marketingplatform.google.com">https://marketingplatform.google.com</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+</ul>
+<h2 class="atx" id="presencia-en-redes-sociales-social-media">Presencia en redes sociales (social media)</h2>
+<p>Mantenemos presencia en línea dentro de las redes sociales y procesamos los datos de los usuarios en este contexto para comunicarnos con los usuarios activos allí u ofrecer información sobre nosotros. Nos gustaría señalar que los datos de los usuarios pueden procesarse fuera de México. Esto puede dar lugar a riesgos para los usuarios porque, por ejemplo, la aplicación de los derechos de los usuarios podría dificultarse. Además, los datos de los usuarios generalmente se procesan dentro de las redes sociales con fines de investigación de mercado y publicidad. Por ejemplo, se pueden crear perfiles de uso en función del comportamiento de uso y los intereses resultantes de los usuarios. Los perfiles de uso pueden ser utilizados, a su vez, por ejemplo, para colocar anuncios dentro y fuera de las redes que presumiblemente corresponden a los intereses de los usuarios. Para estos fines, las cookies generalmente se almacenan en los ordenadores de los usuarios, en los que se almacenan el comportamiento de uso y los intereses de los usuarios. Además, los datos independientes de los dispositivos utilizados por los usuarios también pueden almacenarse en los perfiles de uso (especialmente si los usuarios son miembros de las respectivas plataformas y han iniciado sesión en ellas). Para una presentación detallada de las respectivas formas de procesamiento y las opciones para objetar (opt-out), nos referimos a las declaraciones de privacidad y la información proporcionada por los operadores de las respectivas redes. En el caso de las solicitudes de información y la afirmación de los derechos de los interesados, también nos gustaría señalar que estos se pueden hacer valer de manera más efectiva con los proveedores. Solo los proveedores tienen acceso a los datos de los usuarios y pueden tomar las medidas adecuadas y proporcionar información directamente. Si aún necesita ayuda, puede ponerse en contacto con nosotros. Facebook: Somos corresponsables con Facebook Ireland Ltd. de la recopilación (pero no del procesamiento posterior) de los datos de los visitantes de nuestra página de Facebook (conocida como "Página de fans"). Estos datos incluyen información sobre los tipos de contenido que los usuarios ven o interactúan, o las acciones que realizan (consulte "Cosas que usted y otros hacen y proporcionan" en la Política de datos de Facebook: <a href="https://www.facebook.com/policy">https://www.facebook.com/policy</a>), así como información sobre los dispositivos que utilizan los usuarios (por ejemplo, direcciones IP, sistema operativo, tipo de navegador, configuración de idioma, datos de cookies; consulte "Información del dispositivo" en la Declaración de política de datos de Facebook:&nbsp; <a href="https://www.facebook.com/policy">https://www.facebook.com/policy</a>). Como se explica en la Política de datos de Facebook en "¿Cómo usamos esta información?", Facebook también recopila y utiliza información para proporcionar servicios de análisis, llamados "Estadísticas de la página", a los operadores de la página para proporcionarles información sobre cómo las personas interactúan con sus páginas y con el contenido asociado con ellas. Hemos celebrado un acuerdo especial con Facebook ("Información de Page Insights", <a href="https://www.facebook.com/legal/terms/page_controller_addendum">https://www.facebook.com/legal/terms/page_controller_addendum</a>), que regula en particular qué medidas de seguridad debe observar Facebook y en qué Facebook ha aceptado cumplir con los derechos del interesado (es decir, los usuarios pueden, por ejemplo, enviar información o solicitudes de eliminación directamente a Facebook). Los derechos de los usuarios (en particular a la información, eliminación, objeción y queja ante la autoridad supervisora competente) no están restringidos por los acuerdos con Facebook. Puede encontrar más información en la sección "Información sobre las estadísticas de la página" (<a href="https://www.facebook.com/legal/terms/information_about_page_insights_data">https://www.facebook.com/legal/terms/information_about_page_insights_data</a>).</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de contacto (por ejemplo, correo electrónico, números de teléfono), datos de contenido (por ejemplo, entradas en formularios en línea), datos de uso (por ejemplo, sitios web visitados, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Fines del procesamiento: solicitudes de contacto y comunicación, comentarios (por ejemplo, recopilación de comentarios a través de un formulario en línea), marketing.</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</li>
+</ul>
+<p>Servicios utilizados y proveedores de servicios:</p>
+<ul>
+<li><p>Instagram: Red social; proveedor de servicios: Instagram Inc, 1601 Willow Road, Menlo Park, CA, 94025, EE. UU., empresa matriz: Facebook, 1 Hacker Way, Menlo Park, CA 94025, EE. UU.; sitio web: <a href="https://www.instagram.com">https://www.instagram.com</a>; política de privacidad: <a href="https://instagram.com/about/legal/privacy">https://instagram.com/about/legal/privacy</a>.</p>
+</li>
+<li><p>Facebook: Red social; proveedor de servicios: Facebook Ireland Ltd, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irlanda, empresa matriz: Facebook, 1 Hacker Way, Menlo Park, CA 94025, EE. UU.; Sitio web: <a href="https://www.facebook.com">https://www.facebook.com</a>; Política de privacidad: <a href="https://www.facebook.com/about/privacy">https://www.facebook.com/about/privacy</a>; Opt-out: Configuración de anuncios: <a href="https://www.facebook.com/settings?tab=ads">https://www.facebook.com/settings?tab=ads</a>.</p>
+</li>
+<li><p>LinkedIn: red social; proveedor de servicios: LinkedIn Ireland Unlimited Company, Wilton Place, Dublín 2, Irlanda; sitio web: <a href="https://www.linkedin.com">https://www.linkedin.com</a>; política de privacidad: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a>; opt-out: <a href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out">https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out</a>.</p>
+</li>
+<li><p>Twitter: red social; proveedor de servicios: Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2 D02 AX07, Irlanda, empresa matriz: Twitter Inc, 1355 Market Street, Suite 900, San Francisco, CA 94103, EE. UU.; política de privacidad: <a href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a>, (configuración) <a href="https://twitter.com/personalization">https://twitter.com/personalization</a>.</p>
+</li>
+<li><p>YouTube: Red social y plataforma de vídeo; proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>; opt-out: <a href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</p>
+</li>
+<li><p>Xing: Red social; Proveedor del servicio: XING AG, Dammtorstraße 29-32, 20354 Hamburgo, Alemania; sitio web: <a href="https://www.xing.de">https://www.xing.de</a>; política de privacidad: <a href="https://privacy.xing.com/de/datenschutzerklaerung">https://privacy.xing.com/de/datenschutzerklaerung</a>.</p>
+</li>
+</ul>
+<h2 class="atx" id="plugins-y-funciones-y-contenido-incrustados">Plugins y funciones y contenido incrustados</h2>
+<p>Integramos elementos funcionales y de contenido en nuestra oferta en línea que se obtienen de los servidores de sus respectivos proveedores (en adelante, |" proveedores externos"). Estos pueden ser, por ejemplo, gráficos, videos o mapas de ciudades (en lo sucesivo, denominados uniformemente "contenido"). La integración siempre requiere que los terceros proveedores de este contenido procesen la dirección IP del usuario, ya que sin la dirección IP no podrían enviar el contenido a su navegador. Por lo tanto, la dirección IP es necesaria para la visualización de este contenido o función. Nos esforzamos por utilizar solo el contenido cuyos respectivos proveedores utilizan la dirección IP solo para la entrega del contenido. Los proveedores externos también pueden usar las llamadas etiquetas de píxeles (gráficos invisibles, también conocidos como "balizas web") con fines estadísticos o de marketing. Las "etiquetas de píxeles" se pueden utilizar para analizar información como el tráfico de visitantes en las páginas de este sitio web. La información seudónima también puede almacenarse en cookies en el dispositivo del usuario y puede contener, entre otras cosas, información técnica sobre el navegador y el sistema operativo, sitios web de referencia, hora de la visita y otra información sobre el uso de nuestra oferta en línea, así como estar vinculada a dicha información de otras fuentes. Notas sobre bases legales: Si solicitamos a los usuarios su consentimiento para utilizar proveedores externos, la base legal para el procesamiento de datos es el consentimiento. De lo contrario, los datos de los usuarios se procesan sobre la base de nuestros intereses legítimos (es decir, el interés en servicios eficientes, económicos y amigables para el destinatario). En este contexto, también nos gustaría remitirle a la información sobre el uso de cookies en esta política de privacidad. Complementos y contenido de Facebook: Somos conjuntamente responsables con Facebook Ireland Ltd. de recopilar o recibir en el curso de una transmisión (pero no de procesamiento adicional) "Datos de eventos" que Facebook recopila o recibe en el curso de una transmisión por medio de los complementos sociales de Facebook (y las funciones de incrustación de contenido) que se ejecutan en nuestro Servicio en línea con el fin de:&nbsp; a) mostrar contenido, así como información promocional que sea relevante para los presuntos intereses de los usuarios; b) la entrega de mensajes comerciales y transaccionales (por ejemplo, dirigiéndose a los usuarios a través de Facebook Messenger); c) mejorar la entrega de anuncios y la personalización de las características y el contenido (por ejemplo, mejorar la detección de qué contenido o información publicitaria presumiblemente coincide con los intereses de los usuarios). Hemos celebrado un acuerdo especial con Facebook ("Anexo para partes responsables", <a href="https://www.facebook.com/legal/controller_addendum">https://www.facebook.com/legal/controller_addendum</a>), que regula en particular qué medidas de seguridad debe observar Facebook (<a href="https://www.facebook.com/legal/terms/data_security_terms">https://www.facebook.com/legal/terms/data_security_terms</a>) y en el que Facebook ha acordado cumplir con los derechos de los interesados (es decir, los usuarios pueden, por ejemplo, proporcionar información o realizar solicitudes de eliminación directamente a Facebook). Nota: Cuando Facebook nos proporciona métricas, análisis e informes (que se agregan, es decir, no reciben información sobre usuarios individuales y son anónimos para nosotros), este procesamiento no se realiza bajo responsabilidad compartida, sino sobre la base de un contrato de procesamiento de datos ("Términos de procesamiento de datos", <a href="https://www.facebook.com/legal/terms/dataprocessing">https://www.facebook.com/legal/terms/dataprocessing</a>), los "Términos y condiciones de seguridad de datos" (<a href="https://www.facebook.com/legal/terms/data_security_terms">https://www.facebook.com/legal/terms/data_security_terms</a>) y,&nbsp; con respecto al procesamiento en los EE. UU., sobre la base de cláusulas contractuales estándar ("Facebook EU Data Transfer Addendum", <a href="https://www.facebook.com/legal/EU_data_transfer_addendum">https://www.facebook.com/legal/EU_data_transfer_addendum</a>). Los derechos de los usuarios (en particular a la información, eliminación, objeción y queja ante la autoridad supervisora competente) no están restringidos por los acuerdos con Facebook.</p>
+<ul>
+<li><p>Tipos de datos procesados: Datos de uso (por ejemplo, sitios web visitados, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP), datos de eventos (Facebook) ("datos de eventos" son datos que pueden transmitirse, por ejemplo, a través de Facebook Pixel (a través de aplicaciones o de otras maneras), por nosotros a Facebook y se relacionan con individuos o sus acciones; los datos incluyen,&nbsp; p. ej... Información sobre visitas a sitios web, interacciones con contenidos, funciones, instalaciones de apps, compras de productos, etc.; Los datos del evento se procesan con el fin de formar grupos objetivo para el contenido y la información publicitaria (audiencias personalizadas); Los datos del evento no incluyen el contenido real (como comentarios escritos), no hay información de inicio de sesión y no hay información de contacto (es decir, no hay nombres, direcciones de correo electrónico y números de teléfono). Facebook elimina los datos del evento después de un máximo de dos años, los grupos objetivo se formaron a partir de ellos con la eliminación de nuestra cuenta de Facebook), los datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono), datos de contenido (por ejemplo, entradas en formularios en línea).</p>
+</li>
+<li><p>Sujetos de datos: Usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Finalidades del tratamiento: prestación de nuestra oferta online y experiencia de usuario, prestación de servicios contractuales y atención al cliente, marketing, elaboración de perfiles con información relacionada con el usuario (creación de perfiles de usuario).</p>
+</li>
+<li><p>Base jurídica: Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<h2 class="atx" id="servicios-utilizados-y-proveedores-de-servicios">Servicios utilizados y proveedores de servicios:</h2>
+<ul>
+<li><p>Complementos y contenido de Facebook: complementos y contenido social de Facebook: esto puede incluir, por ejemplo, contenido como imágenes, videos o texto y botones que permiten a los usuarios compartir contenido de esta oferta en línea dentro de Facebook. La lista y la apariencia de los complementos sociales de Facebook se pueden ver aquí: <a href="https://developers.facebook.com/docs/plugins/">https://developers.facebook.com/docs/plugins/</a>; Proveedor de servicios: Facebook Ireland Ltd, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irlanda; empresa matriz: Facebook, 1 Hacker Way, Menlo Park, CA 94025, ESTADOS UNIDOS; sitio web: <a href="https://www.facebook.com">https://www.facebook.com</a>; política de privacidad: <a href="https://www.facebook.com/about/privacy">https://www.facebook.com/about/privacy</a>; opt-out: configuración de anuncios: <a href="https://www.facebook.com/settings?tab=ads">https://www.facebook.com/settings?tab=ads</a>.</p>
+</li>
+<li><p>Font Awesome: Representación de fuentes y símbolos; proveedor de servicios: Fonticons, Inc. ,6 Porter Road Apartment 3R, Cambridge, MA 02140, USA; Sitio web: <a href="https://fontawesome.com/">https://fontawesome.com/</a>; Política de privacidad: <a href="https://fontawesome.com/privacy">https://fontawesome.com/privacy</a>.</p>
+</li>
+<li><p>Google Fonts: Integramos las fuentes ("Google Fonts") del proveedor Google, por lo que los datos del usuario se utilizan únicamente con el fin de mostrar las fuentes en el navegador del usuario. La integración se basa en nuestros intereses legítimos en un uso técnicamente seguro, libre de mantenimiento y eficiente de las fuentes, su visualización uniforme y teniendo en cuenta las posibles restricciones de licencia para su integración. Proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://fonts.google.com/">https://fonts.google.com/</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+</li>
+<li><p>Google Maps: Integramos los mapas del servicio "Google Maps" del proveedor Google. Los datos procesados pueden incluir, en particular, direcciones IP y datos de ubicación de los usuarios, que, sin embargo, no se recopilan sin su consentimiento (generalmente se ejecutan como parte de la configuración de sus dispositivos móviles); proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://cloud.google.com/maps-platform">https://cloud.google.com/maps-platform</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>; opt-out: plugin opt-out: <a href="https://tools.google.com/dlpage/gaoptout?hl=de">https://tools.google.com/dlpage/gaoptout?hl=de</a>, configuración para la visualización de anuncios: <a href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</p>
+</li>
+<li><p>API y SDK de Google Maps: interfaces con los servicios de mapas y ubicación de Google que permiten, por ejemplo, complementar las entradas de direcciones, las determinaciones de ubicación, los cálculos de distancia o proporcionar información complementaria sobre ubicaciones y otros lugares; proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://cloud.google.com/maps-platform">https://cloud.google.com/maps-platform</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+</li>
+<li><p>Complementos y contenido de LinkedIn: complementos y contenido de LinkedIn: esto puede incluir, por ejemplo, contenido como imágenes, videos o texto y botones que permiten a los usuarios compartir contenido de esta oferta en línea dentro de LinkedIn. Proveedor de servicios: LinkedIn Ireland Unlimited Company, Wilton Place, Dublín 2, Irlanda; Sitio web: <a href="https://www.linkedin.com">https://www.linkedin.com</a>; Política de privacidad: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a>; Opt-out: <a href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out">https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out</a>.</p>
+</li>
+<li><p>Complementos y contenido de Twitter: complementos y botones de Twitter: esto puede incluir, por ejemplo, contenido como imágenes, videos o texto y botones que permiten a los usuarios compartir contenido de esta oferta en línea dentro de Twitter. Proveedor de servicios: Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2 D02 AX07, Irlanda, Empresa matriz: Twitter Inc, 1355 Market Street, Suite 900, San Francisco, CA 94103, EE. UU.; Sitio web: <a href="https://twitter.com/de">https://twitter.com/de</a>; Política de privacidad: <a href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a>.</p>
+</li>
+<li><p>Videos de YouTube: contenido de video; Proveedor de servicios: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlanda, empresa matriz: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.; sitio web: <a href="https://www.youtube.com">https://www.youtube.com</a>; política de privacidad: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>; opt-out: plugin de exclusión: <a href="https://tools.google.com/dlpage/gaoptout?hl=de">https://tools.google.com/dlpage/gaoptout?hl=de</a>, configuración de visualización de anuncios: <a href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</p>
+</li>
+<li><p>Xing Plugins and Buttons: Xing Plugins and Buttons - Esto puede incluir, por ejemplo, contenido como imágenes, videos o texto y botones que permiten a los usuarios compartir contenido de esta oferta en línea dentro de Xing. Proveedor del servicio: XING AG, Dammtorstraße 29-32, 20354 Hamburgo, Alemania; Sitio web: <a href="https://www.xing.com">https://www.xing.com</a>; Política de privacidad: <a href="https://privacy.xing.com/de/datenschutzerklaerung">https://privacy.xing.com/de/datenschutzerklaerung</a>.</p>
+</li>
+<li><p>Vimeo: Contenido de video; Proveedor de servicios: Vimeo Inc., Atención: Departamento Legal, 555 West 18th Street New York, New York 10011, USA; Sitio web: <a href="https://vimeo.com">https://vimeo.com</a>; Política de Privacidad: <a href="https://vimeo.com/privacy">https://vimeo.com/privacy</a>; Exclusión voluntaria: Señalamos que Vimeo puede utilizar Google Analytics y consultar la política de privacidad (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>), así como las opciones de exclusión voluntaria para Google Analytics (<a href="https://tools.google.com/dlpage/gaoptout?hl=de">https://tools.google.com/dlpage/gaoptout?hl=de</a>) o la configuración de Google para el uso de datos con fines de marketing (<a href="https://adssettings.google.com/">https://adssettings.google.com/</a>).</p>
+</li>
+</ul>
+<h2 class="atx" id="herramientas-de-gestion-organizacion-y-auxiliares">Herramientas de gestión, organización y auxiliares</h2>
+<p>Utilizamos servicios, plataformas y software de otros proveedores (en lo sucesivo, "proveedores externos") con el fin de organizar, gestionar, planificar y proporcionar nuestros servicios. Al seleccionar proveedores externos y sus servicios, observamos los requisitos legales. En este contexto, los datos personales pueden procesarse y almacenarse en los servidores de los proveedores externos. Esto puede involucrar varios datos que procesamos de acuerdo con esta política de privacidad. Estos datos pueden incluir, en particular, datos maestros y datos de contacto de los usuarios, datos sobre transacciones, contratos, otros procesos y su contenido. Si los usuarios son referidos a proveedores externos o su software o plataformas en el curso de la comunicación, los negocios u otras relaciones con nosotros, los proveedores externos pueden procesar datos de uso y metadatos con fines de seguridad, optimización de servicios o marketing. Por lo tanto, le pedimos que observe los avisos de protección de datos de los respectivos proveedores externos. Notas sobre bases legales: Si solicitamos a los usuarios su consentimiento para el uso de proveedores externos, la base legal para el procesamiento de datos es el consentimiento. Además, su uso puede ser un componente de nuestros servicios (pre)contractuales, siempre que el uso de los proveedores externos se haya acordado dentro de este marco. De lo contrario, los datos del usuario se procesan sobre la base de nuestros intereses legítimos (es decir, el interés en servicios eficientes, económicos y amigables para el destinatario). En este contexto, también nos gustaría remitirle a la información sobre el uso de cookies en esta política de privacidad.</p>
+<ul>
+<li><p>Tipos de datos procesados: datos de inventario (por ejemplo, nombres, direcciones), datos de contacto (por ejemplo, correo electrónico, números de teléfono), datos de contenido (por ejemplo, entradas en formularios en línea), datos de uso (por ejemplo, sitios web visitados, interés en el contenido, tiempos de acceso), metadatos / datos de comunicación (por ejemplo, información del dispositivo, direcciones IP).</p>
+</li>
+<li><p>Sujetos de datos: socios de comunicación, usuarios (por ejemplo, visitantes del sitio web, usuarios de servicios en línea).</p>
+</li>
+<li><p>Finalidades del tratamiento: procedimientos ofimáticos y organizativos.</p>
+</li>
+<li><p>Base jurídica: Consentimiento Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</p>
+</li>
+</ul>
+<h2 class="atx" id="servicios-utilizados-y-proveedores-de-servicios-1">Servicios utilizados y proveedores de servicios:</h2>
+<ul>
+<li><p>calendly: programación de citas en línea; proveedor de servicios: Calendly LLC., 271 17th St NW, Ste 1000, Atlanta, Georgia, 30363, EE. UU.; sitio web: <a href="https://calendly.com/de">https://calendly.com/de</a>; política de privacidad: <a href="https://calendly.com/pages/privacy">https://calendly.com/pages/privacy</a>.</p>
+</li>
+<li><p>Jira: Aplicación web para la gestión de errores, manejo de problemas y gestión de proyectos operativos; proveedor de servicios: Atlassian Inc. (San Francisco, Harrison Street Location), 1098 Harrison Street, San Francisco, California 94103, EE. UU.; Sitio web: <a href="https://www.atlassian.com/software/jira">https://www.atlassian.com/software/jira</a>; Política de privacidad: <a href="https://www.atlassian.com/legal/privacy-policy">https://www.atlassian.com/legal/privacy-policy</a></p>
+</li>
+<li><p>Mapbox: Utilizamos los servicios de Mapbox para gestionar direcciones. Dirección: MapBox Inc, 740 15th St NW, Washington, DC 20005, USA. Para utilizar las funciones de Mapbox, es necesario almacenar su dirección IP. Esta información generalmente se transfiere a un servidor Mapbox en los ESTADOS UNIDOS y se almacena allí. El proveedor de este sitio no tiene ninguna influencia en esta transmisión de datos. Puede encontrar más información sobre el manejo de los datos del usuario en la política de privacidad de Mapbox: <a href="https://www.mapbox.com/privacy/">https://www.mapbox.com/privacy/</a>.</p>
+</li>
+<li><p>DeepL: Utilizamos los servicios de DeepL para la traducción automática de contenido de la plataforma. Dirección: Deepl GmbH, Maarweg 165, 50825 Colonia, Alemania. Sitio web: <a href="https://www.deepl.com/">https://www.deepl.com/</a>. La información sobre el tratamiento de los datos del usuario se puede encontrar en la política de privacidad correspondiente: <a href="https://www.deepl.com/en/privacy/">https://www.deepl.com/en/privacy/</a>.</p>
+</li>
+</ul>
+<h2 class="atx" id="eliminacion-de-datos">Eliminación de datos</h2>
+<p>Los datos procesados por nosotros se eliminarán de acuerdo con los requisitos legales tan pronto como se revoquen sus consentimientos permitidos para el procesamiento u otros permisos dejen de aplicarse (por ejemplo, si el propósito del procesamiento de estos datos ha dejado de aplicarse o no es necesario para el propósito). Si los datos no se eliminan porque son necesarios para otros fines legalmente permitidos, su procesamiento se limita a estos fines. Es decir, los datos se bloquean y no se procesan para otros fines. Esto se aplica, por ejemplo, a los datos que deben conservarse por razones de derecho mercantil o fiscal o cuyo almacenamiento es necesario para la afirmación, el ejercicio o la defensa de reclamaciones legales o para la protección de los derechos de otra persona física o jurídica. Como parte de nuestros avisos de privacidad, podemos proporcionar a los usuarios información adicional sobre la eliminación, así como la retención de datos que es específica para cada operación de procesamiento.</p>
+<h2 class="atx" id="modificacion-y-actualizacion-de-la-politica-de-privacidad">Modificación y actualización de la política de privacidad</h2>
+<p>Le pedimos que se informe regularmente sobre el contenido de nuestra política de privacidad. Adaptamos la declaración de protección de datos tan pronto como los cambios en el procesamiento de datos realizado por nosotros lo hagan necesario. Le informaremos tan pronto como los cambios requieran un acto de cooperación por su parte (por ejemplo, consentimiento) u otra notificación individual. Cuando proporcionemos direcciones e información de contacto de empresas y organizaciones en esta declaración de privacidad, tenga en cuenta que las direcciones pueden cambiar con el tiempo y verifique la información antes de contactarnos.</p>
+<h2 class="atx" id="derechos-de-los-interesados">Derechos de los interesados</h2>
+<p>Como interesado, tiene derecho a varios derechos en virtud de lo establecido en el Capítulo III de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP):</p>
+<ul>
+<li><p>Derecho de oposición: Tiene derecho a oponerse en cualquier momento, por motivos relacionados con su situación particular, al tratamiento de los datos personales que le conciernen que se lleva a cabo sobre la base del artículo 28 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP); esto también se aplica a la elaboración de perfiles basada en estas disposiciones. Si los datos personales que le conciernen se procesan con fines de marketing directo, tiene derecho a oponerse en cualquier momento al procesamiento de los datos personales que le conciernen para los fines de dicho marketing; esto también se aplica a la elaboración de perfiles, en la medida en que esté relacionada con dicho marketing directo.</p>
+</li>
+<li><p>Derecho de revocación de consentimientos: Usted tiene derecho a revocar cualquier consentimiento que haya dado en cualquier momento (Art. 50 de la citada Ley).</p>
+</li>
+<li><p>Derecho de acceso: Tiene derecho a solicitar confirmación sobre si se están procesando datos en cuestión y a obtener información sobre estos datos, así como información adicional y una copia de los datos de acuerdo con los requisitos legales (Art. 50 de la citada Ley).</p>
+</li>
+<li><p>Derecho de rectificación: De conformidad con la ley, tiene derecho a solicitar que se completen los datos que le conciernen o que se rectifiquen los datos inexactos que le conciernen.</p>
+</li>
+<li><p>Derecho a la supresión y limitación del tratamiento: Tiene derecho, de conformidad con la ley, a solicitar que los datos que le conciernen se borren inmediatamente o, alternativamente, a solicitar la limitación del tratamiento de los datos de conformidad con la ley.</p>
+</li>
+<li><p>Derecho a la portabilidad de los datos: Tiene derecho a recibir los datos relacionados con usted que nos haya proporcionado en un formato estructurado, común y legible por máquina de acuerdo con los requisitos legales, o a solicitar que se transfieran a otro controlador.</p>
+</li>
+<li><p>Reclamación ante la autoridad de control: De conformidad con la ley y sin perjuicio de cualquier otro recurso administrativo o judicial, también tiene derecho a presentar una reclamación ante una autoridad de control de protección de datos, en particular una autoridad de control en el Estado miembro en el que reside habitualmente, la autoridad de control de su lugar de trabajo o el lugar de la presunta infracción,&nbsp; si considera que el tratamiento de los datos personales que le conciernen infringe el RGPD.</p>
+</li>
+</ul>
+<h2 class="atx" id="definiciones">Definiciones</h2>
+<p>Esta sección le proporciona una descripción general de los términos utilizados en esta política de privacidad. Muchos de los términos están tomados de la ley y definidos principalmente en el Art. 3 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP). Las definiciones legales son vinculantes. Las siguientes explicaciones, por otro lado, están destinadas principalmente a ayudar a la comprensión. Los términos se ordenan alfabéticamente.</p>
+<ul>
+<li><p>Pruebas A / B: Las pruebas A / B se utilizan para mejorar la usabilidad y el rendimiento de las ofertas en línea. Por ejemplo, a los usuarios se les presentan diferentes versiones de un sitio web o sus elementos, como formularios de entrada, en los que puede diferir la colocación del contenido o las etiquetas de los elementos de navegación. Luego, en función del comportamiento de los usuarios, por ejemplo, permanecer más tiempo en la página web o interactuar con mayor frecuencia con los elementos, se puede determinar cuál de estas páginas web o elementos tienen más probabilidades de satisfacer las necesidades de los usuarios.</p>
+</li>
+<li><p>Red de entrega de contenido (CDN): Una "red de entrega de contenido" (CDN) es un servicio que se puede utilizar para entregar el contenido de una oferta en línea, en particular archivos multimedia grandes como gráficos o scripts de programas, de forma más rápida y segura con la ayuda de servidores distribuidos regionalmente conectados a través de Internet.</p>
+</li>
+<li><p>Mapas de calor: Los "mapas de calor" son movimientos del mouse de los usuarios que se resumen para formar una imagen general, que se puede utilizar, por ejemplo, para identificar qué elementos del sitio web son preferidos y qué elementos del sitio web prefieren menos los usuarios.</p>
+</li>
+<li><p>Enmascaramiento de IP: "Enmascaramiento de IP" se refiere a un método en el que el último octeto, es decir, los dos últimos números de una dirección IP, se elimina para que la dirección IP ya no se pueda usar para identificar de forma única a una persona. Por lo tanto, el enmascaramiento de IP es un medio para seudonimizar los procedimientos de procesamiento, especialmente en el marketing en línea.</p>
+</li>
+<li><p>Seguimiento de clics: El seguimiento de clics nos permite realizar un seguimiento de los movimientos de los usuarios dentro de una experiencia en línea completa. Dado que los resultados de estas pruebas son más precisos si se puede rastrear la interacción del usuario durante un período de tiempo (por ejemplo, para que podamos averiguar si a un usuario le gusta regresar), las cookies generalmente se almacenan en las computadoras de los usuarios para estos fines de prueba.</p>
+</li>
+<li><p>Medición de conversión: La medición de conversión (también conocida como "evaluación de la acción de visita") es un método utilizado para determinar la efectividad de las medidas de marketing. Para este propósito, una cookie generalmente se almacena en los dispositivos de los usuarios dentro de los sitios web en los que se llevan a cabo las medidas de marketing y luego se recupera nuevamente en el sitio web de destino. Por ejemplo, esto nos permite rastrear si los anuncios que hemos colocado en otros sitios web han tenido éxito.</p>
+</li>
+<li><p>Datos personales: "Datos personales" significa cualquier información relacionada con una persona física identificada o identificable (en adelante, "sujeto de datos"); una persona física identificable es aquella que puede ser identificada, directa o indirectamente, en particular por referencia a un identificador como un nombre, un número de identificación, datos de ubicación, un identificador en línea (por ejemplo, cookie) o a uno o más factores específicos de la identidad física, fisiológica, genética, mental, económica, cultural o social de esa persona física.</p>
+</li>
+<li><p>Perfiles con información relacionada con el usuario: El tratamiento de "perfiles con información relacionada con el usuario", o "perfiles" para abreviar, incluye cualquier tipo de tratamiento automatizado de datos personales que consiste en utilizar dichos datos personales para analizar, evaluar o predecir determinados aspectos personales relativos a una persona física (dependiendo del tipo de elaboración de perfiles, esto puede incluir información diferente sobre demografía,&nbsp; comportamiento e intereses, como por ejemplo, la interacción con sitios web y su contenido, etc.) para analizar, evaluar o predecir (por ejemplo, intereses en cierto contenido o productos, comportamiento de clic en un sitio web o ubicación). Las cookies y las balizas web se utilizan a menudo con fines de elaboración de perfiles.</p>
+</li>
+<li><p>Medición de alcance: La medición de alcance (también conocida como análisis web) se utiliza para evaluar el flujo de visitantes a una oferta en línea y puede incluir el comportamiento o los intereses de los visitantes en cierta información, como el contenido del sitio web. Con la ayuda del análisis de alcance, los propietarios de sitios web pueden ver, por ejemplo, en qué momento los visitantes visitan su sitio web y qué contenido les interesa. Esto les permite, por ejemplo, adaptar mejor el contenido del sitio web a las necesidades de sus visitantes. A los efectos del análisis de alcance, a menudo se utilizan cookies seudónimas y balizas web para reconocer a los visitantes que regresan y, por lo tanto, obtener análisis más precisos del uso de una oferta en línea.</p>
+</li>
+<li><p>Controlador: un "controlador" es la persona física o jurídica, autoridad pública, agencia u otro organismo que solo o conjuntamente con otros determina los fines y medios del procesamiento de datos personales.</p>
+</li>
+<li><p>Procesamiento: "Procesamiento" significa cualquier operación o conjunto de operaciones que se realiza sobre datos personales, ya sea por medios automáticos o no. El término es amplio e incluye prácticamente cualquier manejo de datos, ya sea recopilación, análisis, almacenamiento, transmisión o eliminación.</p>
+</li>
+</ul>
+</article>
+</body>
+</html>
