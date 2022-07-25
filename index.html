@@ -21,6 +21,15 @@
     <title>FábricaDigital</title>
     <link rel='stylesheet' href='static/scss/styles.css'>
     <link rel='shortcut icon' href='static/img/logo/favicon.webp' type='image/x-icon'>
+    <!-- Materialize JS -->
+    <script src="static/js/bin/materialize.min.js"></script>
+
+    <!-- JS initalizers -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            M.AutoInit();
+        });
+    </script>
     <script src='static/js/menu.js'></script>
     <script src="static/js/index.js"></script>
 </head>
@@ -110,31 +119,31 @@
             </h1>
         </div>
     </div>
-    <section class="red">
-        <h1 class="first">Accede a nuestras plataformas <a href="#reference_1">[1]</a></h1>
+    <section class="red-techfactory">
+        <h1 class="first">Accede a nuestras plataformas <a href="#modal1" class="modal-trigger">[1]</a></h1>
         <div class="container">
-            <a href="https://detect.knoware.biz/detect-ma/" target="_blank" class="btn">
-                <span class="blue"></span>
-                <span class="yellow"></span>
-                <span class="blue"></span>
+            <a href="https://detect.knoware.biz/detect-ma/" target="_blank" class="animated-btn">
+                <span class="blue-techfactory"></span>
+                <span class="yellow-techfactory"></span>
+                <span class="blue-techfactory"></span>
                 <span class="green"></span>
                 <div>
                     Evaluación de madurez digital y para la innovación
                 </div>
             </a>
-            <a href="https://plataforma.fabricadigital.org.mx/login" target="_blank" class="btn">
-                <span class="blue"></span>
-                <span class="yellow"></span>
-                <span class="blue"></span>
+            <a href="https://plataforma.fabricadigital.org.mx/login" target="_blank" class="animated-btn">
+                <span class="blue-techfactory"></span>
+                <span class="yellow-techfactory"></span>
+                <span class="blue-techfactory"></span>
                 <span class="green"></span>
                 <div>
                     Ecosistema virtual de aprendizaje
                 </div>
             </a>
-            <a href="https://fabricadigital.loftos.com/" target="_blank" class="btn">
-                <span class="blue"></span>
-                <span class="yellow"></span>
-                <span class="blue"></span>
+            <a href="https://fabricadigital.loftos.com/" target="_blank" class="animated-btn">
+                <span class="blue-techfactory"></span>
+                <span class="yellow-techfactory"></span>
+                <span class="blue-techfactory"></span>
                 <span class="green"></span>
                 <div>
                     Comunidad de FábricaDigital
@@ -142,8 +151,17 @@
             </a>
         </div>
     </section>
-    <section class="blue">
-        <div class="inverted-triangle-effect red-fill">
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action waves-effect waves-light btn modal-close">Agree</a>
+        </div>
+    </div>
+    <section class="blue-techfactory">
+        <div class="inverted-triangle-effect red-techfactory-fill">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
@@ -152,12 +170,12 @@
         <div class="text-container">
             <h1>¿Quiénes somos?</h1>
             <p>Es una iniciativa de Google en colaboración con la Secretaría de Economía con el objetivo de apoyar la
-                tranformación digital de las PyMEs en México.</p>
+                transformación digital de las PyMEs en México.</p>
             <p>Knoware es el implementador del proyecto y coordinador de la convocatoria.</p>
         </div>
     </section>
     <section class="white">
-        <div class="book-effect blue-fill">
+        <div class="book-effect blue-techfactory-fill">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
@@ -213,7 +231,8 @@
                 </div>
                 <div class="content">
                     <h2>Mentoría y consultoría</h2>
-                    <p>Red de mentoría y consultoría especializada para acompañar a las empresas en el desarrollo de
+                    <p>red-techfactory de mentoría y consultoría especializada para acompañar a las empresas en el
+                        desarrollo de
                         estrategias de transformación digital.</p>
                 </div>
             </div>
@@ -247,7 +266,7 @@
                 <div class="content">
                     <h2>Transferencia de tecnología e implementación</h2>
                     <p>Piloto de implementación de proyectos en las empresas, consultoría especializada y acceso al
-                        Fondo para
+                        apoyo para
                         la implementación.</p>
                 </div>
             </div>
@@ -269,7 +288,7 @@
             </div>
         </div>
     </section>
-    <section class="yellow">
+    <section class="yellow-techfactory">
         <div class="wave-effect white-fill">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -286,7 +305,7 @@
         </div>
     </section>
     <section class="white">
-        <div class="triangle-effect yellow-fill">
+        <div class="triangle-effect yellow-techfactory-fill">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
@@ -310,7 +329,7 @@
             </div>
         </div>
     </section>
-    <section class="blue">
+    <section class="blue-techfactory">
         <div class="tilt-effect white-fill">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -321,8 +340,9 @@
         <div id="article_container" class="article_container"></div>
     </section>
     <footer class="container" id=references>
-        <div class="width-1000" id="reference_1">
-            <p>[1] Para ingresar a las plataformas los usuarios, deberán aceptar los términos y condiciones de cada
+        <div class="width-1000">
+            <p id="reference_1">[1] Para ingresar a las plataformas los usuarios, deberán aceptar los términos y
+                condiciones de cada
                 desarrollador y reconocer sus políticas de privacidad. Algunas plataformas serán de ingreso exclusivo
                 para las empresas aceptadas en el programa a profundidad.</p>
         </div>
