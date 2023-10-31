@@ -1,324 +1,42 @@
-<!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description'
         content='Una comunidad para la transformación digital de PyMEs, las cadenas de valor y fuerza laboral de México.'>
-    <meta name='author' content='Manuel Sandoval Arroyo'>
     <meta property='twitter:card' content='summary'>
     <meta property='og:site_name' content='FábricaDigital'>
-    <meta property='og:title' content='FábricaDigital'>
+    <meta property='og:title' content='Próximamente FábricaDigital'>
     <meta property='og:type' content='website'>
     <meta property='og:description'
         content='Una comunidad para la transformación digital de PyMEs, las cadenas de valor y fuerza laboral de México.'>
-    <meta property='og:image' content='raw image link'>
+    <meta property='og:image' content='https://raw.githubusercontent.com/manusandoval05/techfactory-site/docker/static/img/proximamente.png'>
     <meta property='og:image:width' content='1280'>
     <meta property='og:image:height' content='800'>
     <meta property='og:url' content='https://www.fabricadigital.org.mx'>
-    <title>FábricaDigital</title>
-    <link rel='stylesheet' href='static/scss/styles.css'>
+    <title>FabricaDigital</title>
     <link rel='shortcut icon' href='static/img/logo/favicon.webp' type='image/x-icon'>
-    <!-- Materialize JS -->
-    <script src="static/js/bin/materialize.min.js"></script>
-
-    <!-- JS initalizers -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            M.AutoInit();
-        });
-    </script>
-    <script src='static/js/menu.js'></script>
-    <script src="static/js/index.js"></script>
 </head>
-
 <body>
-    <header class="index">
-        <a href="#" class="logo"><img src="static/img/logo/logo.webp" alt="Logo FábricaDigital"></a>
-        <ul>
-            <li><a href="muestra.html">Inicio</a></li>
-            <li><a href="convocatoria.html">Convocatoria</a></li>
-            <li><a href="empresas.html">Empresas</a></li>
-            <li><a href="alianzas.html">Alianzas</a></li>
-            <li><a href="comunidad.html">Comunidad</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-    <aside class="sidebar">
-        <ul>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                    <path fill-rule="evenodd"
-                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                </svg>
-                <a href="muestra.html">Inicio</a>
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-calendar-week" viewBox="0 0 16 16">
-                    <path
-                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
-                    <path
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                </svg>
-                <a href="convocatoria.html">Convocatoria</a>
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-building" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
-                    <path
-                        d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
-                </svg>
-                <a href="empresas.html">Empresas</a>
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
-                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                </svg>
-                <a href="alianzas.html">Alianzas</a>
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-                </svg>
-                <a href="comunidad.html">Comunidad</a>
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-mailbox"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
-                    <path
-                        d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
-                </svg>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </aside>
-    <div class="big-background-text">
-        <img src="static/img/gallery/index/start_image.webp" alt="Procesos de manufactura automatizados supervisados por un especialista">
-        <div class="text">
-            <h1><i>“La comunidad de transformación digital de PyMEs, cadenas de valor y fuerza laboral de México”</i>
-            </h1>
-        </div>
+    <style>
+        div{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 95vh;
+            max-height: 95vh;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+    </style>
+    <div>
+        <img src="static/img/proximamente.png" alt="Próximamente Fábrica Digital">
     </div>
-    <section class="red-techfactory">
-        <h1 class="first no-margin-bottom">Regístrate y accede a nuestros beneficios</h1>
-        <a href="#modal1" class="modal-trigger" style="text-decoration: underline;">Políticas de privacidad y de servicio</a>
-        <div class="container">
-            <a href="https://detect.knoware.biz/detect-ma/" target="_blank" class="animated-btn">
-                <span class="blue-techfactory"></span>
-                <span class="yellow-techfactory"></span>
-                <span class="blue-techfactory"></span>
-                <span class="green"></span>
-                <div>
-                    Registro y evaluación de madurez digital y para la innovación
-                </div>
-            </a>
-        </div>
-    </section>
-    <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <iframe style="width: 100%; height: 99%" src="politicas.html" frameborder="0"></iframe>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action waves-effect waves-light btn modal-close">De acuerdo</a>
-        </div>
-    </div>
-    <section class="blue-techfactory">
-        <div class="inverted-triangle-effect red-techfactory-fill">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="text-container">
-            <h1>¿Quiénes somos?</h1>
-            <p>Es una iniciativa de Google en colaboración con la Secretaría de Economía con el objetivo de apoyar la
-                transformación digital de las PyMEs en México.</p>
-            <p>Knoware es el implementador del programa y coordinador de la convocatoria.</p>
-        </div>
-    </section>
-    <section class="white">
-        <div class="book-effect blue-techfactory-fill">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-        <h1>¿Qué ofrecemos?</h1>
-        <div class="service-container">
-            <div class="card">
-                <div class="icon" style="--i: #4285f4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-pencil-square" viewBox="0 0 16 16">
-                        <path
-                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                        <path fill-rule="evenodd"
-                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                    </svg>
-                </div>
-                <div class="content">
-                    <h2>Evaluación de Madurez Digital e innovación</h2>
-                    <p>Evaluación de madurez digital y para la innovación de PyMEs mexicanas. Evaluación de brechas
-                        y recomendaciones, análisis de oportunidades sectoriales de transformación.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon" style="--i: #eb4335">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-journal-album" viewBox="0 0 16 16">
-                        <path
-                            d="M5.5 4a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5zm1 7a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3z" />
-                        <path
-                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                        <path
-                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-                    </svg>
-                </div>
-                <div class="content">
-                    <h2>Transferencia de conocimiento.</h2>
-                    <ul class="browser-default">
-                        <li>Programa especializado de capacitación para las empresas participantes</li>
-                        <li>Ecosistema virtual de aprendizaje</li>
-                        <li>Bootcamp para la industria de semiconductores y electrónica</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon" style="--i: #fbbc05">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-boxes" viewBox="0 0 16 16">
-                        <path
-                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
-                    </svg>
-                </div>
-                <div class="content">
-                    <h2>Mentoría y consultoría</h2>
-                    <p>Red-FábricaDigital de mentoría y consultoría especializada para acompañar a las empresas en el
-                        desarrollo de
-                        estrategias de transformación digital.</p>
-                </div>
-            </div>
-            <div class="card" style="--i: #34a853">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-pin-map" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
-                        <path fill-rule="evenodd"
-                            d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
-                    </svg>
-                </div>
-                <div class="content">
-                    <h2>Mapa de Ruta de transformación digital</h2>
-                    <p>Mapas de Ruta de transformación digital para cada empresa seleccionada:</p>
-                    <ul class="browser-default">
-                        <li>Desarrollo de capacidades de innovación basada en datos</li>
-                        <li>Actualización del mapa de ruta nacional</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon" style="--i: #4285f4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-broadcast-pin" viewBox="0 0 16 16">
-                        <path
-                            d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
-                    </svg>
-                </div>
-                <div class="content">
-                    <h2>Transferencia de tecnología e implementación</h2>
-                    <p>Piloto de implementación de proyectos en las empresas, consultoría especializada y acceso al
-                        apoyo para
-                        la implementación.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon" style="--i: #eb4335">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-people" viewBox="0 0 16 16">
-                        <path
-                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-                    </svg>
-                </div>
-                <div class="content">
-                    <h2>Comunidad</h2>
-                    <p>FábricaDigital es una comunidad de PyMEs de manufactura, empresas de tecnología, mentores y
-                        consultores
-                        especializados para propiciar el intercambio tecnológico y la transformación digital de las
-                        cadenas de valor en México.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="yellow-techfactory">
-        <div class="wave-effect white-fill">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="text-container">
-            <h1>Los retos de la transformación digital</h1>
-            <p>Ante los retos de la cuarta revolución industrial y los efectos de la pandemia, las empresas deberán
-                transformarse rápidamente para adaptarse a las nuevas condiciones del mercado. Las tecnologías digitales
-                pueden facilitar ese proceso.</p>
-        </div>
-    </section>
-    <section class="white">
-        <div class="triangle-effect yellow-techfactory-fill">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h1>FábricaDigital - México</h1>
-        <div class="container">
-            <div class="img-container"><a target="_blank" href="https://about.google"><img
-                src="static/img/logo/gallery/google-logo.webp" alt="Logo Google"></a></div>
-            <div class="img-container"><a target="_blank" href="https://www.gob.mx/se/"><img
-                        src="static/img/logo/gallery/ministry-logo.webp" alt="Logo Secretaría de Economía"></a></div>
-        </div>
-        <div class="uneven-container">
-            <div class="img-container small"><a href="https://www.knoware.biz" target="_blank"><img
-                        src="static/img/logo/gallery/knoware-logo.webp" alt="Logo Knoware"></a>
-            </div>
-            <div class="img-container extra-small">
-                <a href="https://elevation.ac">
-                    <img src="static/img/logo/gallery/elevation-logo.webp" alt="Logo Elevation">
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="blue-techfactory">
-        <div class="tilt-effect white-fill">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h1 class="extra-top-margin">Últimas Noticias</h1>
-        <div id="article_container" class="article_container"></div>
-    </section>
 </body>
+</html>
